@@ -8,6 +8,8 @@ export default {
     extend: {
       colors: {
         customGreen: '#0C6967',
+        coustemOrange: '#D95103',
+
       },
     },
   },

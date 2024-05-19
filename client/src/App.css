@@ -1,56 +1,20 @@
-/* .container-fluids {
+.our-menu {
+    width: 221px;
+    height: 67px;
+    font-family: 'Allura', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 67px; /* 120% of 56px is 67.2px, rounded to 67px */
+    display: flex;
+    align-items: center;
+    color: #0C6967;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
 
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 16px 156px;
-gap: 24px;
-
-position: absolute;
-height: 80px;
-left: 0px;
-right: 0px;
-top: 0px;
-
-background: #FFFFFF;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-
-}
-
-.momo1{
-    /* Momo 1 
-
-width: 32px;
-height: 32px;
-
-
-/* Inside auto layout 
-flex: none;
-order: 0;
-flex-grow: 0;
-
-}
-.titles{
-    /* Logo */
-
-/* Auto layout 
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 16px 0px;
-gap: px;
-
-width: 168px;
-height: 48px;
-
-
-/* Inside auto layout 
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
-} */
 .uikit{
     
 display: flex;
@@ -59,106 +23,39 @@ text-decoration: none;
 color: #0C6967;
 font-weight: 600;
 }
+.title-momos{
 
-/* 
-.container-flud-navbar{
-    /* Nav bar */
-
-/* Auto layout 
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 16px 156px;
-gap: 24px;
-
-position: absolute;
-height: 80px;
-left: 0px;
-right: 0px;
-top: 0px;
-
-background: #FFFFFF;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-
-}
- */
-
-/*
-.navbar-section-first{
-
-
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 16px 0px;
-gap: 8px;
-
-width: 168px;
-height: 48px;
-
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
-
-
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-width: 124px;
-height: 32px;
-
-
-
-flex: none;
-order: 0;
-flex-grow: 0;
-
-}
-
-
-.Uikit{
-
-
-
-width: 84px;
-height: 30px;
-
-font-family: 'Proxima Nova';
+font-family: 'Chela One';
 font-style: normal;
-font-weight: 700;
-font-size: 25px;
+font-weight: 400;
+font-size: 40px;
 line-height: 120%;
+/* identical to box height, or 48px */
+display: flex;
+align-items: center;
 
-color: #0C6967;
+/* Primary/primary-6 */
+color: #D95103;
 
 
+/* Inside auto layout */
 flex: none;
 order: 1;
 flex-grow: 0;
 
+}
+
+.buffmomonew{
+padding: 8px 16px;
+gap: 8px;
+
+width: 63px;
+height: 33px;
+
+/* Primary/primary-6 */
+background: #D95103;
+border-radius: 16px 0px;
+z-index: 2;
+
 
 }
-.top-header-section{
-
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 10px;
-
-width: 552px;
-height: 48px;
-
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 1;
-
-} */
