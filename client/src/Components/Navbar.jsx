@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import { CiInstagram } from "react-icons/ci";
 import { FaTiktok } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa"; 
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,36 +18,33 @@ function Navbar() {
                         {/* Left Section: Logo and Title */}
                         <div className="flex items-center gap-3">
                             <img className="h-8 w-auto" src={logo} alt="Logo" />
-                            <a href="#" className="ml-2 text-xl font-semibold text-customGreen">Momos</a>
+
+                            <a href="/" className="ml-2 text-xl font-semibold text-customGreen">Momos</a>
                         </div>
 
                         {/* Center Section: Navigation Links with Dropdown */}
                         <div className="hidden lg:flex lg:items-center lg:w-auto">
                             <ul className="flex flex-col lg:flex-row lg:space-x-6">
                                 <li>
+                                    <Link to={"/aboutus"}>
                                     <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline ">About Us</a>
+                                    </Link>
                                 </li>
-                                <li className="relative">
-                                    <button
-                                        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                                        className="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-900 focus:outline-none hover:text-[17px] hover:underline"
-                                    >
-                                        Our menu
-                                        <i className={`fas fa-chevron-down ml-1 transition-transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`}></i>
-                                    </button>
-                                    {isDropdownOpen && (
-                                        <ul className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg">
-                                            <li><a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a></li>
-                                            <li><a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a></li>
-                                            <li><a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a></li>
-                                        </ul>
-                                    )}
+                               
+                                <li>
+                                    <Link to={"/ourManu"}>
+                                    <a href="#" className="block py-2 pr-4 pl-3 text-slate-600 hover:text-[17px] hover:underline">Our Manu</a>
+                                    </Link>
                                 </li>
                                 <li>
+                                    <Link to={"/ourservice"}>
                                     <a href="#" className="block py-2 pr-4 pl-3 text-slate-600 hover:text-[17px] hover:underline">Our services</a>
+                                    </Link>
                                 </li>
                                 <li>
+                                    <Link to={"/allegryadvice"}>
                                     <a href="#" className="block py-2 pr-4 pl-3 text-gray-500 hover:text-[17px] hover:underline" aria-disabled="true">Allergy Advice</a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -68,7 +66,7 @@ function Navbar() {
 
                     {/* Toggle Button for Small Screens */}
                     <div className="flex lg:hidden items-center">
-                        <a href="#" className="py-1 px-1 mr-2 text-sm md:text-md md:py-1 md:px-4 text-white bg-coustemOrange rounded-3xl">Contact Us</a>
+                        <a href="#" className="py-1 px-2 mr-3 text-sm md:text-md md:py-1 md:px-4 text-white bg-coustemOrange rounded-3xl">Contact Us</a>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="navbar-toggler flex items-center px-3 py-2 border rounded text-gray-500 border-gray-400 hover:text-gray-700 hover:border-gray-700"

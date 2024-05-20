@@ -3,16 +3,12 @@ import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import {Toaster} from "react-hot-toast";
 
 import './App.css'
-import OurService from './pages/OurService'
-import AboutUs from '../src/Components/AboutUs'
-<<<<<<< HEAD
 import Home from './pages/Home';
 import ProtectedRoute from "./Components/ProtectedRoute";
 import MomosProvider  from './providers/MomosProvider';
+import AboutUs from './pages/AboutUs';
+import OurManu from './pages/OurManu';
 
-
-=======
->>>>>>> aa5059dba17b2fcda876997f29b4946b3ef2412e
 
 function App() {
 const router = createBrowserRouter([
@@ -25,8 +21,8 @@ const router = createBrowserRouter([
      element:<AboutUs/>
   },
   {
-    path:"/ourmenu",
-    element:<OurService />
+    path:"/ourManu",
+    element:<OurManu />
   },
   // {
   //   path:"/ourservice",
@@ -45,19 +41,14 @@ const router = createBrowserRouter([
 ])
 
   return (
-<<<<<<< HEAD
+
 <div>
   <MomosProvider>
     <RouterProvider router={router}/>
     <Toaster/>
   </MomosProvider>
 </div>
-=======
-    <div>
-      <AboutUs />
-      <OurService/>
-    </div>
->>>>>>> aa5059dba17b2fcda876997f29b4946b3ef2412e
+
   )
 }
 

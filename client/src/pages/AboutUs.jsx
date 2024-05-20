@@ -1,15 +1,15 @@
 import React from 'react'
 
 
-import Group8 from '../images/aboutImg/Group8.png'
+import Group8 from '../images/aboutImg/Group8.png';
 import About02 from '../images/aboutImg/About02.jpeg'
-import Watch from '../images/aboutImg/Watch.png'
+import Button from '../images/aboutImg/Button.png'
 import About03 from '../images/aboutImg/About03.jpeg'
 import About04 from '../images/aboutImg/About04.png'
-import About05 from '../images/aboutImg/About05.jpeg'
-import Navbar from './Navbar';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
-function About() {
+function AboutUs() {
     const customStyle = {
         fontFamily: "'Allura', cursive",
         fontWeight: 400,
@@ -66,7 +66,7 @@ function About() {
                         <p className='text-lg'>See how we make momos that you like from only the best ingredients</p>
                     </div>
                     <div>
-                        <img className='absolute top-[240px] md:top-[450px] w-24 md:w-1/6 h-auto' src={Watch} alt="" />
+                        <img className='absolute top-[240px] md:top-[450px] w-24 md:w-1/6 h-auto' src={Button} alt="" />
                     </div>
                 </div>
             </div>
@@ -88,8 +88,9 @@ function About() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
 
-export default About;
+export default AboutUs;

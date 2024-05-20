@@ -1,13 +1,16 @@
 import React from 'react'
-import qrcode from "../images/aboutImg/qrcode.png"
+import scan from "../images/aboutImg/Scan.png"
 import { IoIosPhonePortrait } from "react-icons/io";
 import BuffMomos from '../Components/BuffMomos';
 import ChikenMomos from '../Components/ChikenMomos';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 
-function OurService() {
+function OurManu() {
   return (
     <>
+    <Navbar/>
       <div className='container mx-auto px-6 lg:px-40 gap-14 flex flex-col justify-center  '>
 
         {/* our services  */}
@@ -28,7 +31,7 @@ function OurService() {
               <span className='flex justify-center text-center font-normal text-gray-700 '>Your can also check allergy advice using your phone as well</span>
             </a>
             <a href="" className=' justify-center text-center'>
-              <img className='border border-black  md:w-[150px] md:h-[150px] w-[130px] h-[130px] mt-6' style={{ borderWidth: '5px' }} src={qrcode} alt="" />
+              <img className='  md:w-[150px] md:h-[150px] w-[130px] h-[130px] mt-6'  src={scan} alt="" />
             </a>
             <div className='flex flex-row  justify-center gap-1 '>
               <p className=' uppercase text-coustemOrange font-bold justify-center font-sans md:text-xl transition-all text-md '>Scan</p>
@@ -68,9 +71,10 @@ function OurService() {
 
 
       </div>
+      <Footer/>
     </>
   )
 }
 
-export default OurService
+export default OurManu;
 
