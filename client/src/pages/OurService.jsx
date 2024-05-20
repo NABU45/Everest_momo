@@ -3,13 +3,15 @@ import qrcode from "../images/aboutImg/qrcode.png"
 import { IoIosPhonePortrait } from "react-icons/io";
 import BuffMomos from '../Components/BuffMomos';
 import ChikenMomos from '../Components/ChikenMomos';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 
 function OurService() {
   return (
     <>
+      <Navbar />
       <div className='container mx-auto px-6 lg:px-40 gap-14 flex flex-col justify-center  '>
-
         {/* our services  */}
         <div className='flex justify-center items-center mt-14'>
           <p className='our-menu'>Our Menu</p>
@@ -65,9 +67,8 @@ function OurService() {
             <ChikenMomos />
           </div>
         </div>
-
-
       </div>
+      <Footer />
     </>
   )
 }
