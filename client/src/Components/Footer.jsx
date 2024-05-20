@@ -49,12 +49,12 @@ function Footer() {
 
             <div className="lg:w-[33%] w-full">
               <a href="#" className="text-md  text-customGreen font-bold">Follow Us</a>
-              <div className="flex mt-3 space-x-2">
+              <div className="flex mt-3 space-x-3">
                 <a href="#"><FaFacebookF size={24} className=" bg-customiconbg  text-white rounded-full p-1" /></a>
                 <a href="#"><FaLinkedinIn  size={24} className="bg-customiconbg text-white rounded-full p-1" /></a>
                 <a href="#"><CiTwitter size={24} className="bg-customiconbg text-white rounded-full p-1" /></a>
               </div>
-              <div className="flex mt-2 space-x-2">
+              <div className="flex mt-2 space-x-3">
                 <a href="#"><FaYoutube  size={24} className="bg-customiconbg text-white rounded-full p-1" /></a>
                 <a href="#"><CiInstagram size={24} className="bg-customiconbg text-white rounded-full p-1" /></a>
                 <a href="#"><FaTiktok size={24} className="bg-customiconbg text-white rounded-full p-1" /></a>
