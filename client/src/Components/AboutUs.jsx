@@ -22,13 +22,13 @@ function About() {
                             <p className='text-coustemOrange font-bold text-3xl'>
                                 <span> Our authentic momo recipes</span>
                             </p>
-                            <p className='font-bold text-lg md:text-4xl'>
+                            <p className='font-bold text-3xl'>
                                 passed down through generations
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center items-center relative bottom-0 mt-4 invisible md:visible'>
+                <div className='mt-4 invisible md:visible'>
                     <div className=''>
                         <img src={Group8} alt="" />
                     </div>
