@@ -28,7 +28,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center items-center relative bottom-0 mt-4 invisible md:visible'>
+                <div className='mt-4 invisible md:visible'>
                     <div className=''>
                         <img src={Group8} alt="" />
                     </div>
