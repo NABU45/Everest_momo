@@ -22,7 +22,7 @@ function About() {
                             <p className='text-coustemOrange font-bold text-3xl'>
                                 <span> Our authentic momo recipes</span>
                             </p>
-                            <p className='font-bold text-lg md:text-4xl'>
+                            <p className='font-bold text-3xl'>
                                 passed down through generations
                             </p>
                         </div>
