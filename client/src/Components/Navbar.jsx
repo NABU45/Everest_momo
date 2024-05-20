@@ -10,7 +10,6 @@ function Navbar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
-        
         <nav className="bg-white shadow-md">
             <div className="container mx-auto px-6 lg:px-40">
                 <div className="flex justify-between items-center py-4">
@@ -56,13 +55,13 @@ function Navbar() {
                     {/* Right Section: Social Media Icons and Contact Us Button */}
                     <div className="hidden lg:flex items-center space-x-4 ml-auto">
                         <a href="#" className="">
-                            < FaFacebookF size={24}  className='bg-customiconbg text-white rounded-full p-1'/>
+                            < FaFacebookF size={24}  className='bg-slate-600 text-white rounded-full p-1'/>
                         </a>
                         <a href="#" className="">
-                            <FaTiktok size={24}  className='bg-customiconbg text-white rounded-full p-1'/>
+                            <FaTiktok size={24}  className='bg-slate-600 text-white rounded-full p-1'/>
                         </a>
                         <a href="#" className="">
-                            <CiInstagram size={24}  className='bg-customiconbg text-white rounded-full p-1'/>
+                            <CiInstagram size={24}  className='bg-slate-600 text-white rounded-full p-1'/>
                         </a>
                         <a href="#" className="ml-4 py-1 px-4 text-white bg-coustemOrange rounded-3xl">Contact Us</a>
                     </div>
