@@ -59,3 +59,35 @@ z-index: 2;
 
 
 }
+.popular{
+  /* Status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+gap: 8px;
+width: 84px;
+height: 33px;
+/* Error/E300 */
+background: #C71720;
+border-radius: 16px 0px;
+}
+
+.recomanded{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+
+width: 133px;
+height: 33px;
+background: #0072E3;
+border-radius: 16px 0px;
+
+
+
+}

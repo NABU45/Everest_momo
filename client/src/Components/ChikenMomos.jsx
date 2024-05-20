@@ -5,8 +5,7 @@ import chillimomo from "../images/aboutImg/chillimomo.png"
 import frymomo from "../images/aboutImg/frymomo.png"
 
 
-
-function BuffMomos() {
+function ChikenMomos() {
   return (
     <>
       <div className='flex flex-col '>
@@ -70,4 +69,4 @@ function BuffMomos() {
   )
 }
 
-export default BuffMomos
+export default ChikenMomos

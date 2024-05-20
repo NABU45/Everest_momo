@@ -9,7 +9,12 @@ export default {
       colors: {
         customGreen: '#0C6967',
         coustemOrange: '#D95103',
+        coustemRed: '#C71720',
 
+
+      },
+      fontFamily: {
+        'chela': ['"Chela One"', 'cursive'],
       },
     },
   },
