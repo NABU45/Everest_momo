@@ -8,8 +8,8 @@ import Footer from './Components/Footer'
 function App() {
   return (
     <div>
-      {/* <AboutUs />
-      <OurService/> */}
+      {/* <AboutUs /> */}
+      <OurService/> 
       {/* <Footer/> */}
     </div>
   )

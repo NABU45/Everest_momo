@@ -10,6 +10,7 @@ function Navbar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
+        
         <nav className="bg-white shadow-md">
             <div className="container mx-auto px-6 lg:px-40">
                 <div className="flex justify-between items-center py-4">
