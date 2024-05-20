@@ -10,6 +10,8 @@ export default {
         customGreen: '#0C6967',
         coustemOrange: '#D95103',
         coustemRed: '#C71720',
+        customiconbg:'#A6AEBB',
+
 
 
       },

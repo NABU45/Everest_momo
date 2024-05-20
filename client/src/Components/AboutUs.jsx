@@ -21,9 +21,9 @@ function About() {
                         <h3 className='our-menu mt-5'> About Us</h3>
                       <div cals>
 
-                        <p className='pride uppercase mt-4 w-[70%]'>we pride ourself on</p>
+                        <p className='pride uppercase mt-4 w-[100%] md:text-md lg:text-xl  transition-all text-sm '>we pride ourself on</p>
                         <div className='flex flex-col justify-first   space-y-2 font-bold   '>
-                       <span className='  text-coustemOrange  justify-first font-sans md:text-3xl transition-all text-md w-[100%]'>Our authentic momo recipes,</span>
+                       <span className='  text-coustemOrange  justify-first font-sans md:text-2xl lg:text-4xl  transition-all text-md w-[100%]'>Our authentic momo recipes,</span>
                        <span className='text-slate-800  text-first font-sans md:text-3xl transition-all text-md w-[70%]'>passed down through generations</span>
                     </div>
                        </div>
