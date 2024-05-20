@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import icon from "../images/aboutImg/image-removebg-preview-removebg-preview.png";
+import logo from "../images/aboutImg/icon.png"
 import '@fortawesome/fontawesome-free/css/all.css';
 import { CiInstagram } from "react-icons/ci";
 import { FaTiktok } from "react-icons/fa";
@@ -16,7 +16,7 @@ function Navbar() {
                     <div className="flex items-center gap-14">
                         {/* Left Section: Logo and Title */}
                         <div className="flex items-center gap-3">
-                            <img className="h-8 w-auto" src={icon} alt="Logo" />
+                            <img className="h-8 w-auto" src={logo} alt="Logo" />
                             <a href="#" className="ml-2 text-xl font-semibold text-customGreen">Momos</a>
                         </div>
 

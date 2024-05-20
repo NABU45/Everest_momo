@@ -7,9 +7,8 @@ import AboutUs from '../src/Components/AboutUs'
 function App() {
   return (
     <div>
-      <Navbar/>
-      <OurService/>
       <AboutUs />
+      <OurService/>
     </div>
   )
 }

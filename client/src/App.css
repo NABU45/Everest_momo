@@ -88,6 +88,24 @@ height: 33px;
 background: #0072E3;
 border-radius: 16px 0px;
 
+}
+.pride{
+  /* WE PRIDE OURSELF ON */
 
+/* width: 254px;
+height: 20px; */
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.12em;
+
+/* Neutral/N200 */
+color: #6B788E;
 
 }
