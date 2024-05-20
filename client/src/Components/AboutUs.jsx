@@ -2,6 +2,7 @@ import React from 'react'
 
 
 import Group8 from '../images/aboutImg/Group8.png'
+import Navbar from './Navbar';
 
 function About() {
     const customStyle = {
@@ -12,29 +13,28 @@ function About() {
 
 
     return (
-        <div>
-            <div className='flex flex-col md:flex-row px-6 md:px-40 md:justify-evenly'>
-                <div className='mt-[60px] md:mt-[120px] flex justify-between'>
-                    <div className='flex flex-col justify-start'>
-                        <div className='text-4xl text-customGreen md:leading-[76.8px] md:text-6xl' style={customStyle}><span>About Us</span></div>
-                        <div className='mt-[30px] md:mt-[50px]'>
-                            <p className='text-customGrayish'><span>WE PRIDE OURSELF ON</span></p>
-                            <p className='text-coustemOrange font-bold text-3xl'>
-                                <span> Our authentic momo recipes</span>
-                            </p>
-                            <p className='font-bold text-3xl'>
-                                passed down through generations
-                            </p>
-                        </div>
+        <>
+          <Navbar/>
+              <div className='container mx-auto px-6 lg:px-40 gap-14 flex flex-col justify-center  '>
+                <div className='flex flex-row justify-between items-center'>
+                    <div className=' flex flex-col justify-start'>
+                        <h3 className='our-menu mt-5'> About Us</h3>
+                      <div className=''>
+
+                        <p className='pride uppercase mt-4'>we pride ourself on</p>
+                        <div className='flex flex-col justify-first   space-y-2 font-bold   '>
+                       <span className='  text-coustemOrange  justify-first font-sans md:text-3xl transition-all text-md w-[100%]'>Our authentic momo recipes,</span>
+                       <span className='text-slate-800  text-first font-sans md:text-3xl transition-all text-md w-[80%]'>passed down through generations</span>
                     </div>
-                </div>
-                <div className='mt-4 invisible md:visible'>
-                    <div className=''>
-                        <img src={Group8} alt="" />
+                       </div>
+                  </div>
+            
+                      <div className='mt-4 w-[70%] '>
+                        <img  src={Group8} alt="" />
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
