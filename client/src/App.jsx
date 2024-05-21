@@ -4,7 +4,7 @@ import { Toaster } from "react-hot-toast";
 
 import './App.css'
 import OurService from './pages/OurService'
-import AboutUs from '../src/Components/AboutUs'
+import AboutUs from '../src/pages/AboutUs'
 
 import Home from './pages/Home';
 import ProtectedRoute from "./Components/ProtectedRoute";
@@ -45,12 +45,12 @@ function App() {
 
   return (
     <>
-      <div>
+      {/* <div>
         <MomosProvider>
           <RouterProvider router={router} />
           <Toaster />
         </MomosProvider>
-      </div>
+      </div> */}
 
       <div>
         <AboutUs />
