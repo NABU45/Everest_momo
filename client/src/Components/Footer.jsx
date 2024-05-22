@@ -62,7 +62,7 @@ function Footer() {
         </div>
         <hr className='w-full mt-20  border-2 bg-customiconbg' />
         <div className='flex justify-center items-center py-10' style={{ color: '#6B788E' }}>
-            <p>Copyright {currentYear} Everest Momo Pvt. Ltd. All Right Reserved</p>
+            <p>Copyright &copy; {currentYear} Everest Momo Pvt. Ltd. All Right Reserved</p>
         </div>
       </div>
     </div>
