@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import logo from "../images/aboutImg/icon.png"
 import { FaFacebookF, FaLinkedinIn, FaTiktok } from 'react-icons/fa'
 import { CiInstagram } from 'react-icons/ci'
@@ -12,8 +11,7 @@ function Footer() {
 
   return (
     <div>
-      {/* <Navbar /> */}
-      <div className="container mx-auto px-6 lg:px-40 mt-20">
+      <div className="container mx-auto px-6 lg:px-40 mt-32">
         <div className="flex flex-col lg:flex-row justify-start lg:gap-32 gap-10">
           {/* icon */}
           <div className="lg:w-[40%] w-full">
@@ -64,7 +62,7 @@ function Footer() {
         </div>
         <hr className='w-full mt-20  border-2 bg-customiconbg' />
         <div className='flex justify-center items-center py-10' style={{ color: '#6B788E' }}>
-            <p>Copyright {currentYear} Everest Momo Pvt. Ltd. All Right Reserved</p>
+            <p>Copyright &copy; {currentYear} Everest Momo Pvt. Ltd. All Right Reserved</p>
         </div>
       </div>
     </div>

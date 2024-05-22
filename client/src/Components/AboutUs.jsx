@@ -3,10 +3,13 @@ import React from 'react'
 
 import Group8 from '../images/aboutImg/Group8.png'
 import About02 from '../images/aboutImg/About02.jpeg'
-import Watch from '../images/aboutImg/Watch.png'
+import Button from '../images/aboutImg/Button.png'
 import About03 from '../images/aboutImg/About03.jpeg'
 import About04 from '../images/aboutImg/About04.png'
 import About05 from '../images/aboutImg/About05.jpeg'
+import About06 from '../images/aboutImg/About06.png'
+import About07 from '../images/aboutImg/About07.jpeg'
+import About08 from '../images/aboutImg/About08.png'
 import Navbar from './Navbar';
 
 function About() {
@@ -27,15 +30,27 @@ function About() {
         position: 'relative',
         backgroundImage: `url(${About03})`,
         backgroundSize: 'cover',
-        // height: '250px',
-        // width: '50%',
+        transition: 'background-image 0.5s ease',
+    };
+
+    const aboutStyle05 = {
+        position: 'relative',
+        backgroundImage: `url(${About05})`,
+        backgroundSize: 'cover',
+        transition: 'background-image 0.5s ease',
+    };
+
+    const aboutStyle07 = {
+        position: 'relative',
+        backgroundImage: `url(${About07})`,
+        backgroundSize: 'cover',
         transition: 'background-image 0.5s ease',
     };
 
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className='container mx-auto px-6 lg:px-40 gap-14 flex flex-col justify-center'>
                 <div className='flex flex-row justify-between items-center'>
                     <div className=' flex flex-col justify-start'>
@@ -66,7 +81,7 @@ function About() {
                         <p className='text-lg'>See how we make momos that you like from only the best ingredients</p>
                     </div>
                     <div>
-                        <img className='absolute top-[240px] md:top-[450px] w-24 md:w-1/6 h-auto' src={Watch} alt="" />
+                        <img className='absolute top-[240px] md:top-[450px] w-24 md:w-1/6 h-auto' src={Button} alt="" />
                     </div>
                 </div>
             </div>
@@ -88,6 +103,47 @@ function About() {
                     </div>
                 </div>
             </div>
+
+
+            <div className='container mx-auto px-6 lg:px-40 gap-14 flex flex-col justify-center'>
+                <div className='mt-[60px] md:mt-[120px] flex justify-between'>
+                    <div className='flex flex-col md:flex-row justify-start gap-20'>
+                        <div className='w-[100%] md:w-[60%] h-[300px] md:h-[250px]' style={aboutStyle05}>
+                            <div className=' relative bottom-[-230px] md:bottom-[-140px] md:left-[75%]'>
+                                <img className='w-[150px] h-[100px] md:w-[200px] md:h-[150px]' src={About06} alt="" srcset="" />
+                            </div>
+                        </div>
+                        <div className='w-[100%] md:w-[40%] flex flex-col gap-[16px] px-0'>
+                            <p className='font-bold text-md md:text-3xl'> Test the difference with <span className='text-coustemOrange'> our handcrafted momos</span> </p>
+                            <p className='bg-white'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eius molestiae accusamus assumenda pariatur dolor a officia explicabo quidem provident, sequi expedita praesentium deserunt id? Magni eos ad facilis architecto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div className='container mx-auto px-6 lg:px-40 gap-14 flex flex-col justify-center'>
+                <div className='mt-[60px] md:mt-[120px] flex justify-between'>
+                    <div className='flex flex-col-reverse md:flex-row justify-start gap-20'>
+                        <div className='w-[100%] md:w-[50%] flex flex-col gap-[16px] px-0'>
+                            <p className='font-bold text-md md:text-3xl'>
+                                <span> Our momos are the perfect </span>
+                                <span className='text-coustemOrange'> blend of tradition </span>
+                                <span> and </span>
+                                <span className='text-coustemOrange'> innovation </span>
+                            </p>
+                            <p className='bg-white'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eius molestiae accusamus assumenda pariatur dolor a officia explicabo quidem provident, sequi expedita praesentium deserunt id? Magni eos ad facilis architecto.</p>
+                        </div>
+                        <div className='w-[100%] md:w-[50%] h-[300px] md:h-[250px]' style={aboutStyle07}>
+                            <div className=' absolute bottom-[-50px] md:bottom-[-50px] md:left-[-25%]'>
+                                <img className='w-[150px] h-[100px] md:w-[200px] md:h-[150px]' src={About08} alt="" srcset="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </>
     )
 }
