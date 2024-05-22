@@ -1,13 +1,13 @@
 import React from 'react'
-import {createBrowserRouter,RouterProvider} from "react-router-dom";
-import {Toaster} from "react-hot-toast";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 import './App.css'
+import OurService from './pages/OurService'
+import AboutUs from '../src/Components/AboutUs'
 import Home from './pages/Home';
 import ProtectedRoute from "./Components/ProtectedRoute";
 import MomosProvider  from './providers/MomosProvider';
-import AboutUs from './pages/AboutUs';
-import OurManu from './pages/OurManu';
 
 
 function App() {
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
      element:<AboutUs/>
   },
   {
-    path:"/ourManu",
-    element:<OurManu />
+    path:"/ourmenu",
+    element:<OurService />
   },
   // {
   //   path:"/ourservice",
@@ -41,13 +41,17 @@ const router = createBrowserRouter([
 ])
 
   return (
-
 <div>
   <MomosProvider>
     <RouterProvider router={router}/>
     <Toaster/>
   </MomosProvider>
 </div>
+
+    // <div>
+    //   <AboutUs />
+    //   <OurService/>
+    // </div>
 
   )
 }
