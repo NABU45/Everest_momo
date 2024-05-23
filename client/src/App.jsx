@@ -9,6 +9,7 @@ import ProtectedRoute from "./Components/ProtectedRoute";
 import MomosProvider  from './providers/MomosProvider';
 import OurManu from './pages/OurManu';
 import AboutUs from './pages/AboutUs';
+import AllergyAdvice from './pages/AllergyAdvice';
 
 
 function App() {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path:"/ourmanu",
     element:<OurManu/>
+  },
+  {
+    path: "/advice",
+    element: <AllergyAdvice />
   },
   {
     path:"/",
