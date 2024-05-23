@@ -14,6 +14,10 @@ import image from '../images/aboutImg/Image.png';
 import arrowright from "../images/aboutImg/arrow-right.png";
 import playCircle from "../images/aboutImg/play-circle.png";
 import OurServicesSection from '../Components/OurServicesSection';
+import girls from '../images/aboutImg/girls.png';
+import { FaItalic } from 'react-icons/fa';
+import Address from '../Components/Address';
+import GetInTouchForm from '../Components/GetInTouchForm';
 
 
 function Home() {
@@ -146,7 +150,7 @@ function Home() {
         </div>
       </div>
 
-      <div className='mt-8 lg:mt-32 bg-slate-100 w-full'>
+      <div className='mt-8 lg:mt-32 bg-slate-50 w-full'>
         <div className='px-6 lg:px-40 flex justify-center items-center'>
           <h1 className='mt-5 lg:mt-16 text-slate-800 customer text-xl md:text-2xl lg:text-4xl'>
             <span className="text-coustemOrange space-x-1 relative">We Offer People </span> The Service They Want
@@ -176,6 +180,44 @@ function Home() {
           ))}
         </div>
       </div>
+
+
+      {/*Testimonials  */}
+      <div className='mt-8 lg:mt-20 bg-slate-50 w-full py-10'>
+        <div className='px-6 lg:px-40 flex flex-col lg:flex-row lg:justify-between '>
+          <div className='  mt-10 lg:mt-20  w-full lg:w-2/4 '>
+            <h1 className=' text-slate-800 customer text-lg md:text-2xl lg:text-4xl'>200+  <span className="text-coustemOrange space-x-1 relative ml-2">Happy  Customers </span> The Service They Want
+            </h1>
+            <p className=' mt-2 text-customGreen font-bold text-[10px] md:text-xl'>What our customers say about us</p>
+            <div className=' mt-7 lg:mt-12 w-full lg:w-3/4'>
+            <span className='  italic text-md '>“Only the best momo you can find in the market. Different Varieties of momo to choose from. Will be visiting again soon”</span>
+            <h1 className='mt-5 font-bold text-2xl font-proxima'> Lila Dias</h1>
+            </div>
+            <div className='flex  gap-5 mt-10 lg:mt-16'>
+               <img className='smallArrowLeft  cursor-pointer' src={arrowLeft} alt=" " />
+               <img className='smallArrowLeft  cursor-pointer'  src={arrowRights} alt="" />
+            </div>
+
+          </div>
+          <div className='mt-10'>
+            <img  className=' h-[95%] w-[95%]' src={girls} alt="" />
+          </div>
+        </div>
+      </div>
+      {/*  */}
+      <div className=' mt-8 lg:mt-20  px-6 lg:px-40 flex justify-center w-auto items-center text-center '>
+        <div className='flex flex-col'>
+          <h1 className=' text-slate-800 customer text-lg md:text-2xl lg:text-4xl'>Get  <span className="text-coustemOrange space-x-1 relative ml-2">In Touch </span>  </h1>
+          <p className=' mt-2 text-customGreen font-bold text-[10px] md:text-xl'>Our Friendly team Would love to hear from you</p>
+        </div>
+      </div>
+      <div className='  mt-1 lg:mt-20 px-6 lg:px-10 flex justify-center items-center '>
+        <div className=' flex flex-col lg:flex-row   lg:justify-between items-center  gap-10 rounded-lg  p-8 border-2 shadow-lg'>
+          <Address />
+          <GetInTouchForm/>
+        </div>
+      </div>
+
      
       
 
