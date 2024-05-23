@@ -172,5 +172,32 @@ height: 48px;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 100px;
 
+}
+.videoImage{
+width: 100%;
+height: 100%;
 
+}
+.bgVideoImage {
+  position: relative;
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/aboutImg/Shadow.png'), url('../images/aboutImg/Image.png'); /* Add the background image and overlay */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bgVideoImage::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%; /* Adjust the height of the gradient overlay */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.9)); /* Adjust opacity to make the bottom side darker */
 }

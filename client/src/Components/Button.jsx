@@ -1,15 +1,15 @@
 import React from 'react';
-import arrowRight from "../images/aboutImg/arrow-right.png"
-function Button() {
-  return (
-<>
-<div className='flex flex-row justify-center items-center py-2 lg:py-5  bg-customGreen text-white rounded-3xl w-2/3 lg:w-1/2 gap-1 lg:gap-4 '>
-  <p className='text-[10px] md:text-md lg:text-md xl:text-xl justify-center flex items-center'>Explore Our Story</p>
-  <img src={arrowRight} alt="" />
-</div>
 
-</>
-  )
+function Button({ text, customStyles, onClick, image }) {
+  return (
+    <div
+      className={`flex flex-row justify-center items-center py-2 lg:py-3 bg-customGreen text-white rounded-3xl ${customStyles}`}
+      onClick={onClick}
+    >
+      <p className='text-[8px] md:text-md lg:text-[16px] justify-center flex items-center'>{text}</p>
+      <img className='w-3 md:w-6' src={image} alt="Arrow" />
+    </div>
+  );
 }
 
 export default Button;

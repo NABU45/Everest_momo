@@ -10,9 +10,9 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-white shadow-md">
-                <div className="flex justify-between items-center py-4 sm:w-screen px-5 lg:px-40">
-                    <div className="flex items-center gap-14">
+        <nav className="bg-white shadow-md ">
+                <div className="flex  justify-between items-center py-4 sm:w-screen px-5 lg:px-40">
+                    <div className="flex items-center gap-14 ">
                         {/* Left Section: Logo and Title */}
                         <div className="flex items-center gap-3">
                             <img className="h-8 w-auto" src={logo} alt="Logo" />
