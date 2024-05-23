@@ -16,6 +16,7 @@ export default {
       },
       fontFamily: {
         'chela': ['"Chela One"', 'cursive'],
+          'proxima': ['Proxima Nova', 'sans-serif'],
       },
     },
   },
