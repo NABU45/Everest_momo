@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from "../images/aboutImg/icon.png"
-import '@fortawesome/fontawesome-free/css/all.css';
+// import '@fortawesome/fontawesome-free/css/all.css';
 import { CiInstagram } from "react-icons/ci";
 import { FaTiktok } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa"; 
@@ -8,12 +8,10 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     return (
         <nav className="bg-white shadow-md">
-            <div className="container mx-auto px-6 lg:px-40">
-                <div className="flex justify-between items-center py-4">
+                <div className="flex justify-between items-center py-4 sm:w-screen px-5 lg:px-40">
                     <div className="flex items-center gap-14">
                         {/* Left Section: Logo and Title */}
                         <div className="flex items-center gap-3">
@@ -32,12 +30,12 @@ function Navbar() {
                                 </li>
                                
                                 <li>
-                                    <Link to={"/ourManu"}>
+                                    <Link to={"/ourmanu"}>
                                     <a href="#" className="block py-2 pr-4 pl-3 text-slate-600 hover:text-[17px] hover:underline">Our Manu</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to={"/ourservice"}>
+                                    <Link to={"/"}>
                                     <a href="#" className="block py-2 pr-4 pl-3 text-slate-600 hover:text-[17px] hover:underline">Our services</a>
                                     </Link>
                                 </li>
@@ -86,22 +84,10 @@ function Navbar() {
                         <li>
                             <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-900">About Us</a>
                         </li>
-                        <li className="relative">
-                            <button
-                                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                                className="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-900 focus:outline-none"
-                            >
-                                Our menu
-                                <i className={`fas fa-chevron-down ml-1 transition-transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`}></i>
-                            </button>
-                            {isDropdownOpen && (
-                                <ul className="mt-2 w-full bg-white border rounded shadow-lg">
-                                    <li><a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a></li>
-                                    <li><a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a></li>
-                                    <li><a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a></li>
-                                </ul>
-                            )}
+                        <li>
+                            <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-900">Our Manu</a>
                         </li>
+                      
                         <li>
                             <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 hover:text-gray-900">Our services</a>
                         </li>
@@ -112,7 +98,6 @@ function Navbar() {
 
                     </ul>
                 </div>
-            </div>
         </nav>
     );
 }

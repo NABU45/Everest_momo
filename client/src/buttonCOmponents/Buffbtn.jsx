@@ -29,7 +29,7 @@ function Buffbtn() {
           </div>
         </div>
         <div className="flex flex-col items-center">
-          <img className="w-full max-w-[200px] h-auto" src={chillimomo} alt="Buff Chilli Momo" />
+          <img className="w-full max-w-[250px] h-auto" src={chillimomo} alt="Buff Chilli Momo" />
           <div className="flex-col flex justify-center items-center">
             <p className="text-slate-800 font-bold text-sm md:text-md lg:text-lg xl:text-xl">Buff C. Momo</p>
             <p className="flex py-2 gap-1 items-center">
