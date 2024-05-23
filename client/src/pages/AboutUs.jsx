@@ -6,7 +6,7 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 
 import Group8 from '../images/aboutImg/Group8.png'
 import About02 from '../images/aboutImg/About02.jpeg'
-import Button from '../images/aboutImg/Button.png'
+
 import About03 from '../images/aboutImg/About03.jpeg'
 import About04 from '../images/aboutImg/About04.png'
 import About05 from '../images/aboutImg/About05.jpeg'
@@ -18,7 +18,8 @@ import About10 from '../images/aboutImg/About10.jpeg'
 import About11 from '../images/aboutImg/About11.jpg'
 import About12 from '../images/aboutImg/About12.jpeg'
 import About13 from '../images/aboutImg/About13.jpeg'
-// import Navbar from './Navbar';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 function AboutUs() {
     const customStyle = {
@@ -108,7 +109,7 @@ function AboutUs() {
 
     return (
         <>
-            {/* <Navbar /> */}
+            <Navbar />
             <div className='container mx-auto px-6 lg:px-40 gap-14 flex flex-col justify-center'>
                 <div className='flex flex-row justify-between items-center'>
                     <div className=' flex flex-col justify-start'>
@@ -137,7 +138,7 @@ function AboutUs() {
                         <p className='text-lg'>See how we make momos that you like from only the best ingredients</p>
                     </div>
                     <div>
-                        <img className='absolute top-[240px] md:top-[450px] w-24 md:w-1/6 h-auto' src={Button} alt="" />
+                        <img className='absolute top-[240px] md:top-[450px] w-24 md:w-1/6 h-auto' src="" alt="" />
                     </div>
                 </div>
             </div>
@@ -274,6 +275,10 @@ function AboutUs() {
                     </div>
                 </div>
             </div>
+
+            <Footer/>
+
+
         </>
     )
 }
