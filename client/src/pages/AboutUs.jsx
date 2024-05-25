@@ -276,7 +276,8 @@ function AboutUs() {
                 </div>
             </div>
 
-            <Footer/>
+            <Footer footerColor="white" />
+
 
 
         </>

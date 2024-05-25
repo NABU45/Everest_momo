@@ -1,5 +1,7 @@
+
+/* our manu page css */
 .our-menu {
-    width: 221px;
+    width: auto;
     height: 67px;
     font-family: 'Allura', cursive;
     font-style: normal;
@@ -59,6 +61,8 @@ z-index: 2;
 
 
 }
+
+
 .popular{
   /* Status */
 
@@ -106,6 +110,8 @@ letter-spacing: 0.12em;
 color: #6B788E;
 
 }
+
+
 .group3{
   /* pngwing 1 */
 
@@ -215,6 +221,8 @@ height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.9)); /* Adjust opacity to make the bottom side darker */
 }
 
+
+
 @font-face {
   font-family: 'Proxima Nova';
   src: url('/path-to-font-files/ProximaNova-Regular.woff2') format('woff2'),
@@ -231,3 +239,38 @@ height: 100%;
   font-style: normal;
 }
 
+
+
+.custom-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Hide Leaflet attribution and logo */
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-attribution.leaflet-control {
+    display: none !important;
+}
+
+
+
+/* Get in touch from css  */
+
+.custom-phone-input {
+  height: 50px; /* Match height of other input fields */
+  border: 2px solid #cbd5e0; /* Match border of other input fields */
+  border-radius: 0.5rem; /* Match border radius of other input fields */
+  padding: 0.75rem; /* Match padding of other input fields */
+}
+
+.custom-phone-input {
+  width: calc(112% - 58px) !important; /* Adjust width to account for button width */
+}
+
+.custom-phone-button {
+  height: 36px;/* Adjust button width if necessary */
+  background-color: white;
+  border: 2px solid #cbd5e0;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
