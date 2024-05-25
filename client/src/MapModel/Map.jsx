@@ -1,17 +1,26 @@
 import React, { useState, useRef } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, useMapEvents } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import ReactDOMServer from 'react-dom/server';
+import { IoLocationSharp } from "react-icons/io5";
 
-// Custom marker icon
-const markerIcon = new L.Icon({
-  iconUrl: 'marker-icon.png',
-  iconRetinaUrl: 'marker-icon-2x.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  tooltipAnchor: [16, -28],
-  shadowSize: [41, 41]
+// Custom marker icon using IoLocationSharp
+const markerHtmlStyles = `
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+`;
+
+const iconMarkup = ReactDOMServer.renderToStaticMarkup(<IoLocationSharp  color="#D95103" size="3rem" />);
+const customMarkerIcon = new L.DivIcon({
+  html: `<span style="${markerHtmlStyles}">${iconMarkup}</span>`,
+  className: 'custom-div-icon',
+  iconSize: [30, 42],
+  iconAnchor: [15, 42],
 });
 
 const LocationMarker = ({ setSelectedLocation, selectedLocation }) => {
@@ -22,14 +31,7 @@ const LocationMarker = ({ setSelectedLocation, selectedLocation }) => {
   });
 
   return selectedLocation ? (
-    <Marker position={selectedLocation} icon={markerIcon}>
-      <Popup>
-        <strong>Selected Location</strong><br />
-        Latitude: {selectedLocation.lat.toFixed(6)}<br />
-        Longitude: {selectedLocation.lng.toFixed(6)}<br />
-        <img src={`https://via.placeholder.com/150?text=Location(${selectedLocation.lat.toFixed(6)},${selectedLocation.lng.toFixed(6)})`} alt="Selected Location" />
-      </Popup>
-    </Marker>
+    <Marker position={selectedLocation} icon={customMarkerIcon} />
   ) : null;
 };
 
@@ -40,7 +42,7 @@ const Map = () => {
   return (
     <div className="map-container" style={{ position: 'relative' }}>
       <MapContainer
-        center={[27.7172, 85.3240]}
+        center={[27.7172, 85.3240]} // Adjust the center to change the default marker position
         zoom={13}
         scrollWheelZoom={false}
         style={{ height: "800px", width: "100%" }} // Increase height to 800px
