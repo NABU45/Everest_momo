@@ -18,6 +18,7 @@ import girls from '../images/aboutImg/girls.png';
 import { FaItalic } from 'react-icons/fa';
 import Address from '../Components/Address';
 import GetInTouchForm from '../Components/GetInTouchForm';
+import Map from '../MapModel/Map';
 
 
 function Home() {
@@ -214,14 +215,14 @@ function Home() {
       <div className='  mt-1 lg:mt-20 px-6 lg:px-10 flex justify-center items-center '>
         <div className=' flex flex-col lg:flex-row   lg:justify-between items-center  gap-10 rounded-lg  p-8 border-2 shadow-lg'>
           <Address />
-          <GetInTouchForm/>
+          <GetInTouchForm buttonColor="orange" />
         </div>
       </div>
 
-     
-      
-
-      <Footer />
+    <div className=' mt-20 h-auto w-auto'>
+      <Map/>
+    </div>
+    <Footer footerColor="white" />
     </>
   );
 }

@@ -30,6 +30,7 @@ function AllergyAdvice() {
 
             </div>
         </div>
+        
     )
 }
 

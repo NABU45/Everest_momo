@@ -10,13 +10,13 @@ export default {
         customGreen: '#0C6967',
         coustemOrange: '#D95103',
         coustemRed: '#C71720',
-        customiconbg:' #A6AEBB'
-
-
+        customiconbg:' #A6AEBB',
+        customText:'#101828',
       },
       fontFamily: {
         'chela': ['"Chela One"', 'cursive'],
           'proxima': ['Proxima Nova', 'sans-serif'],
+          
       },
     },
   },
