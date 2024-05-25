@@ -124,7 +124,7 @@ function Home() {
         </div>
       </div>
 
-      <div className='flex mx-auto px-6 sm:px-10 md:px-28 lg:px-40'>
+      <div className='flex mx-auto px-6 sm:px-10 md:px-16 lg:px-20 xl:px-40'>
         <img
           className='invisible lg:visible arrowLeft mt-48 cursor-pointer'
           src={arrowLeft}

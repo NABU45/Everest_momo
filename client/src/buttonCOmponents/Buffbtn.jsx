@@ -6,7 +6,7 @@ import frymomo from "../images/aboutImg/frymomo.png";
 
 function Buffbtn() {
   return (
-    <div className="container flex items-center justify-center mx-auto px-6 sm:px-10 md:px-7 lg:px-40 mt-20">
+    <div className="container flex items-center justify-center mx-auto px-6 sm:px-10 md:px-7 lg:px-8 xl:px-40  mt-20">
       <div className="mt-10 flex justify-center items-center md:flex-row lg:flex-row lg:gap-32 md:gap-16 gap-6 flex-col">
         <div className="flex flex-col items-center">
           <img className="w-full max-w-[200px] h-auto" src={momo1} alt="Buff Momo" />

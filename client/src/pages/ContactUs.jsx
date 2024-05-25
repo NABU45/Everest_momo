@@ -81,7 +81,7 @@ function ContactUs() {
             </div>
 
 <div className='bg-slate-50'>
-            <div className='mx-auto flex flex-col md:flex lg:flex-row  items-center mt-20 bg-slate-50 gap-10 xl:gap-24 '>
+            <div className='mx-auto flex flex-col md:flex lg:flex-row  items-center mt-20 bg-slate-50 gap-10 xl:gap-32 '>
                 <div className='w-[300px] md:w-full  lg:w-[550px] xl:w-[650px]'>
                     <Map />
                 </div>

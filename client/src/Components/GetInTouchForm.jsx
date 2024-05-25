@@ -3,15 +3,29 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 
 function GetInTouchForm({ buttonColor }) {
+
+  const [firstName, setFirstName ] = useState(" ");
+  const [lastName, setLastName ] = useState(" ");
+  const [email, setEmail] = useState(" ");
+  const [choice, setChoice ] = useState(" ");
   const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState(' ');
+  const [submitMessage, setSubmitMessage] = useState(' ');
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    setSubmitMessage("Thank you for getting in touch! We will respond shortly.")
+  }
 
   return (
     <div className="grid min-h-full place-items-center">
-      <form className="w-full max-w-lg bg-white rounded-lg">
+      <form className="w-full max-w-lg bg-white rounded-lg " onSubmit={handleSubmit} >
         <div className="flex flex-col md:flex-row justify-between gap-3">
           <div className="w-full md:w-1/2">
             <label htmlFor="firstname" className="block text-xs font-semibold">First Name</label>
             <input
+              onChange={(e) => setFirstName(e.target.value)}
+              value={firstName}
               id="firstname"
               type="text"
               name="firstname"
@@ -22,6 +36,8 @@ function GetInTouchForm({ buttonColor }) {
           <div className="w-full md:w-1/2">
             <label htmlFor="lastname" className="block text-xs font-semibold">Last Name</label>
             <input
+              onChange={(e) => setLastName(e.target.value)}
+              value={lastName}
               id="lastname"
               type="text"
               name="lastname"
@@ -33,6 +49,8 @@ function GetInTouchForm({ buttonColor }) {
 
         <label htmlFor="email" className="block mt-4 text-xs font-semibold">E-mail</label>
         <input
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
           id="email"
           type="email"
           name="email"
@@ -42,6 +60,8 @@ function GetInTouchForm({ buttonColor }) {
 
         <label htmlFor="service" className="block mt-4 text-xs font-semibold">What Can We Do For You</label>
         <select
+          onChange={(e) => setChoice(e.target.value)}
+          value={choice}
           id="service"
           name="service"
           className="block w-full h-[60%] p-3 mt-2 border-slate-200 border-2 rounded-lg"
@@ -56,6 +76,7 @@ function GetInTouchForm({ buttonColor }) {
 
         <label htmlFor="contact-number" className="block mt-4 text-xs font-semibold w-full">Phone Number</label>
         <PhoneInput
+         
           country={'us'}
           value={phone}
           onChange={setPhone}
@@ -71,19 +92,26 @@ function GetInTouchForm({ buttonColor }) {
 
         <label htmlFor="message" className="block mt-4 text-xs font-semibold">Message</label>
         <textarea
+          onChange={(e) => setMessage(e.target.value)}
+          value={message}
           id="message"
           name="message"
           className="block w-full h-[60%] p-3 mt-2 border-slate-200 border-2 rounded-lg"
           required
         />
         <div className='mt-8 flex justify-start'>
-          <a
-            href="#"
+        <button
+            type="submit"
             className={`py-1 px-4 text-white rounded-3xl ${buttonColor === 'green' ? 'bg-customGreen' : 'bg-coustemOrange'}`}
           >
             Send Message
-          </a>
+          </button>
         </div>
+        {submitMessage && (
+          <div className="mt-4 text-green-600">
+            {submitMessage}
+          </div>
+        )}
       </form>
     </div>
   );
