@@ -9,6 +9,8 @@ import Advice05 from '../images/AdviceImg/Advice05.png'
 import Advice06 from '../images/AdviceImg/Advice06.png'
 import Advice07 from '../images/AdviceImg/Advice07.png'
 import Advice08 from '../images/AdviceImg/Advice08.png'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 function AllergyAdvice() {
 
@@ -20,6 +22,8 @@ function AllergyAdvice() {
 
 
     return (
+        <>
+     <Navbar/>
         <div className=' overflow-x-hidden'>
             <div className='container mx-auto px-6 lg:px-40 gap-14 flex flex-col justify-center'>
                 <div className='flex flex-row justify-between items-center'>
@@ -264,6 +268,8 @@ function AllergyAdvice() {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
 
