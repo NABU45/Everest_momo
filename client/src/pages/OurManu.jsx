@@ -8,14 +8,9 @@ import Footer from '../Components/Footer';
 import Advice02 from '../images/AdviceImg/Advice02.png'
 import Advice03 from '../images/AdviceImg/Advice03.png'
 
-
+;
 
 function OurManu() {
-  const customStyle = {
-    fontFamily: "Chela One",
-    fontWeight: 700,
-    fontStyle: 'normal'
-};
 
   return (
     <>

@@ -1,21 +1,48 @@
+// GetInTouchForm.js
+
 import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 
 function GetInTouchForm({ buttonColor }) {
-
-  const [firstName, setFirstName ] = useState(" ");
-  const [lastName, setLastName ] = useState(" ");
-  const [email, setEmail] = useState(" ");
-  const [choice, setChoice ] = useState(" ");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [choice, setChoice] = useState("");
   const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState(' ');
-  const [submitMessage, setSubmitMessage] = useState(' ');
+  const [message, setMessage] = useState('');
+  const [submitMessage, setSubmitMessage] = useState('');
 
-  const handleSubmit = (e) =>{
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitMessage("Thank you for getting in touch! We will respond shortly.")
-  }
+    try {
+      const response = await fetch('http://localhost:9002/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+          choice,
+          phone,
+          message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitMessage("Thank you for getting in touch! We will respond shortly.");
+      } else {
+        setSubmitMessage(data.message); // Display error message from server
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitMessage("An error occurred while submitting the form. Please try again later.");
+    }
+  };
 
   return (
     <div className="grid min-h-full place-items-center">
@@ -76,7 +103,6 @@ function GetInTouchForm({ buttonColor }) {
 
         <label htmlFor="contact-number" className="block mt-4 text-xs font-semibold w-full">Phone Number</label>
         <PhoneInput
-         
           country={'us'}
           value={phone}
           onChange={setPhone}
@@ -100,7 +126,7 @@ function GetInTouchForm({ buttonColor }) {
           required
         />
         <div className='mt-8 flex justify-start'>
-        <button
+          <button
             type="submit"
             className={`py-1 px-4 text-white rounded-3xl ${buttonColor === 'green' ? 'bg-customGreen' : 'bg-coustemOrange'}`}
           >
