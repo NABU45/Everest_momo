@@ -5,9 +5,18 @@ import BuffMomos from '../Components/BuffMomos';
 import ChikenMomos from '../Components/ChikenMomos';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import Advice02 from '../images/AdviceImg/Advice02.png'
+import Advice03 from '../images/AdviceImg/Advice03.png'
+
 
 
 function OurManu() {
+  const customStyle = {
+    fontFamily: "Chela One",
+    fontWeight: 700,
+    fontStyle: 'normal'
+};
+
   return (
     <>
     <Navbar/>
@@ -45,12 +54,16 @@ function OurManu() {
 
         {/* momo manu */}
         <div className='mt-10'>
-          <div className='flex gap-4 justify-center items-center '>
-            {/* <hr  className='w-48 md:w-60 h-[1.4px] bg-slate-800'/> */}
-            <div class="w-[279px] h-[48px] flex justify-center items-center text-[#D95103] order-1 flex-none flex-grow-0 text-[40px] leading-[120%] font-chela font-normal">
-              Buff <span className='text-slate-800 ml-3'> MOMO's</span></div>
-            {/* <p><hr className='w-48 md:w-60 h-[1.4px] bg-slate-800' /></p> */}
+          <div className='flex flex-col lg:flex-row lg-3 lg:gap-6 justify-center items-center '>
+          <img src={Advice02} alt="" className='' />
+            <div class="w-[279px] h-[48px] flex justify-center items-center text-[#D95103] flex-none flex-grow-0 text-[40px] leading-[120%] font-chela font-normal">
+              Buff <span className='text-slate-800 ml-3'> MOMO's</span> 
+            </div> 
+            <img src={Advice03} alt=""  />
+
           </div>
+        
+    
 
           {/* momos iteams */}
           <div className='flex justify-center items-center'>
@@ -58,11 +71,12 @@ function OurManu() {
           </div>
         </div>
         <div className='mt-14'>
-          <div className='flex gap-4 justify-center items-center '>
-            {/* <hr  className='w-48 md:w-60 h-[1.4px] bg-slate-800'/> */}
-            <div class="w-[279px] h-[48px] flex items-center text-[#D95103] order-1 flex-none flex-grow-0 text-[40px] leading-[120%] font-chela font-normal">
+          <div className=' flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center items-center   '>
+              <img src={Advice02} alt="" className='' />
+              <div class="w-[279px] h-[48px] flex items-center text-[#D95103]  flex-none flex-grow-0 text-[40px] leading-[120%] font-chela font-normal">
               CHICKEN<span className='text-slate-800 ml-3'> MOMO's</span></div>
-            {/* <p><hr className='w-48 md:w-60 h-[1.4px] bg-slate-800' /></p> */}
+              <img src={Advice03} alt=""  />
+            
           </div>
           <div className='flex justify-center items-center'>
             <ChikenMomos />
