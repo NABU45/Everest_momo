@@ -11,11 +11,18 @@ export default {
         coustemOrange: '#D95103',
         coustemRed: '#C71720',
         customiconbg:' #A6AEBB',
-        customText:'#101828',
+        customBlack:'#101828',
+        customaragraph: '#6B788E'
+
+
       },
       fontFamily: {
         'chela': ['"Chela One"', 'cursive'],
           'proxima': ['Proxima Nova', 'sans-serif'], 
+
+          //styleName: Heading Style/H3;
+
+
       },
     },
   },

@@ -128,6 +128,14 @@ background: url(pngwing.png);
  color: #D95103;
 }
 
+.btnFont{
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: center;
+  
+}
 .button{
 display: flex;
 flex-direction: row;
@@ -274,3 +282,4 @@ height: 100%;
   border: 2px solid #cbd5e0;
   border-radius: 0.5rem 0 0 0.5rem;
 }
+

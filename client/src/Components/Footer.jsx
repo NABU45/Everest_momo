@@ -24,18 +24,18 @@ function Footer({ footerColor }) {
           {/* momos */}
           <div className="flex flex-col sm:flex-row lg:gap-16 gap-10 w-full lg:w-[60%]">
             <div className="lg:w-[33%] w-full">
-              <a href="#" className="text-md text-customGreen font-bold">Momos</a>
-              <ul className="flex flex-col justify-start mt-3 gap-2 text-sm lg:text-lg">
-                <li><a href="#" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">About Us</a></li>
-                <li><a href="#" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">Our Menu</a></li>
-                <li><a href="#" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">Our Services</a></li>
-                <li><a href="#" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">Contact Us</a></li>
+              <a href="#" className="text-lg text-customGreen font-bold">Momos</a>
+              <ul className="flex flex-col justify-start mt-3 gap-2 text-sm lg:text-md">
+                <li><a href="/aboutus" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">About Us</a></li>
+                <li><a href="/ourmanu" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">Our Menu</a></li>
+                <li><a href="/ourservice" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">Our Services</a></li>
+                <li><a href="/ourcontact" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">Contact Us</a></li>
               </ul>
             </div>
 
             <div className="lg:w-[33%] w-full">
-              <a href="#" className="text-md text-customGreen font-bold">Legals</a>
-              <ul className="flex flex-col justify-start mt-3 gap-2 text-sm lg:text-lg">
+              <a href="#" className="text-lg text-customGreen font-bold">Legals</a>
+              <ul className="flex flex-col justify-start mt-3 gap-2 text-sm lg:text-md">
                 <li><a href="#" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">Terms & Conditions</a></li>
                 <li><a href="#" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">Privacy Policy</a></li>
                 <li><a href="#" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">Support</a></li>
@@ -43,7 +43,7 @@ function Footer({ footerColor }) {
             </div>
 
             <div className="lg:w-[33%] w-full">
-              <a href="#" className="text-md text-customGreen font-bold">Follow Us</a>
+              <a href="#" className="text-lg text-customGreen font-bold">Follow Us</a>
               <div className="flex mt-3 space-x-3">
                 <a href="#"><FaFacebookF size={24} className="bg-customiconbg text-white rounded-full p-1" /></a>
                 <a href="#"><FaLinkedinIn size={24} className="bg-customiconbg text-white rounded-full p-1" /></a>
@@ -58,7 +58,7 @@ function Footer({ footerColor }) {
           </div>
         </div>
         <hr className="w-full mt-10 lg:mt-20 border-1 lg:border-2 bg-customiconbg" />
-        <div className="flex justify-center items-center py-6 lg:py-10 text-xs lg:text-md" style={{ color: '#6B788E' }}>
+        <div className="flex justify-center items-center py-6 lg:py-10 text-xs md:text-md lg:text-lg" style={{ color: '#6B788E' }}>
           <p>Copyright &copy; {currentYear} Everest Momo Pvt. Ltd. All Right Reserved</p>
         </div>
       </div>

@@ -128,7 +128,7 @@ function GetInTouchForm({ buttonColor }) {
         <div className='mt-8 flex justify-start'>
           <button
             type="submit"
-            className={`py-1 px-4 text-white rounded-3xl ${buttonColor === 'green' ? 'bg-customGreen' : 'bg-coustemOrange'}`}
+            className={`py-1 px-10 text-white rounded-3xl ${buttonColor === 'green' ? 'bg-customGreen' : 'bg-coustemOrange'}`}
           >
             Send Message
           </button>
