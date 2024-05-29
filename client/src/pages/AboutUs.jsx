@@ -116,7 +116,7 @@ function AboutUs() {
             <div className=' mx-auto px-6 lg:px-20 xl:px-40  flex flex-col justify-center'>
                 <div className='flex flex-row justify-between items-center gap-10 lg:gap-24'>
                     <div className=' flex flex-col justify-start'>
-                        <h3 className='our-menu  text-4xl lg:text-6xl'> About Us</h3>
+                        <h3 className='our-menu mt-6 md:mt-10 lg:mt-20  text-xl md:text-4xl lg:text-6xl'> About Us</h3>
                         <div>
                             <p className='pride uppercase text-[8px] lg:text-lg  mt-2  lg:mt-12 w-full lg:w-[70%]'>we pride ourself on</p>
                             <div className='flex flex-col justify-first space-y-2 font-bold w-[85%]'>

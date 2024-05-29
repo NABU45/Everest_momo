@@ -218,7 +218,7 @@ function Home() {
         </div>
       </div>
       <div className='  mt-1 lg:mt-20 px-6 lg:px-10 flex justify-center items-center '>
-        <div className=' flex flex-col lg:flex-row   lg:justify-between items-center  gap-10 rounded-lg  p-8 border-2 shadow-lg'>
+        <div className=' flex flex-col lg:flex-row  lg:justify-between items-center  gap-10 rounded-lg  p-8 border-2 shadow-lg'>
           <Address />
           <GetInTouchForm buttonColor="orange " />
         </div>

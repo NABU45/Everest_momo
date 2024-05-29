@@ -36,7 +36,7 @@ function OurService() {
          <div className=' mx-auto px-6 lg:px-20 xl:px-40  flex flex-col justify-center'>
                 <div className='flex flex-row justify-between  gap-1 lg:gap-10 xl:gap-48'>
                     <div className=' flex flex-col justify-start'>
-                        <h3 className='our-menu  mt-6 lg:mt-20  text-xl md:text-4xl lg:text-5xl xl:text-6xl'>Our Services</h3>
+                        <h3 className='our-menu mt-6 md:mt-10 lg:mt-20  text-xl md:text-4xl lg:text-6xl'>Our Services</h3>
                         <div>
                             <p className='pride uppercase text-[6px] lg:text-[14px] xl:text-lg mt-1 lg:mt-12 w-full lg:w-[90%] xl:w-[80%]'>Knowing our customers needs</p>
                             <div className='flex flex-col justify-first space-y-2 font-bold w-[95%]'>
