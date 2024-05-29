@@ -9,9 +9,9 @@ function Footer({ footerColor }) {
   return (
     <div className={`${footerColor === 'white' ? 'bg-white' : 'bg-slate-50'}`}>
       <div className="mx-auto px-6 lg:px-40 mt-32">
-        <div className="flex flex-col lg:flex-row justify-start lg:gap-32 gap-10">
+        <div className="flex flex-col lg:flex-row justify-start lg:gap-28 xl:gap-52 gap-10">
           {/* icon */}
-          <div className="lg:w-[40%] w-full">
+          <div className=" lg:w-[55%] xl:w-[33%] w-full">
             <div className="flex items-center gap-3">
               <img className="h-8 w-auto" src={logo} alt="Logo" />
               <a href="#" className="ml-2 text-xl font-semibold text-customGreen">Momos</a>
@@ -22,8 +22,8 @@ function Footer({ footerColor }) {
           </div>
 
           {/* momos */}
-          <div className="flex flex-col sm:flex-row lg:gap-16 gap-10 w-full lg:w-[60%]">
-            <div className="lg:w-[33%] w-full">
+          <div className="flex flex-col sm:flex-row lg:gap-16 gap-10 w-full xl:w-[40%]">
+            <div className=" lg:w-[35%] w-full">
               <a href="#" className="text-lg text-customGreen font-bold">Momos</a>
               <ul className="flex flex-col justify-start mt-3 gap-2 text-sm lg:text-md">
                 <li><a href="/aboutus" className="block text-gray-700 hover:text-gray-900 hover:text-[17px] hover:underline">About Us</a></li>
@@ -58,7 +58,7 @@ function Footer({ footerColor }) {
           </div>
         </div>
         <hr className="w-full mt-10 lg:mt-20 border-1 lg:border-2 bg-customiconbg" />
-        <div className="flex justify-center items-center py-6 lg:py-10 text-xs md:text-md lg:text-lg" style={{ color: '#6B788E' }}>
+        <div className="flex justify-center items-center text-center py-6 lg:py-10 text-xs md:text-md lg:text-lg" style={{ color: '#6B788E' }}>
           <p>Copyright &copy; {currentYear} Everest Momo Pvt. Ltd. All Right Reserved</p>
         </div>
       </div>

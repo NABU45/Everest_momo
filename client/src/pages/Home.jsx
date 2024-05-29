@@ -62,13 +62,13 @@ function Home() {
       </div>
       <div className="container mx-auto overflow-hidden">
         <div className="relative">
-          <div className="absolute -mt-10 md:mt-5 lg:-mt-20 right-[-125px]  md:-right-6 lg:right-[-250px] xl:right-[-400px] z-0 ">
-            <div className="bg-coustemOrange  w-[200px] h-[200px]  md:w-[500px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[700px] xl:h-[700px] rounded-full"></div>
+          <div className="absolute -mt-6 -md:mt-5 lg:-mt-12 right-[-125px]  md:-right-[280px] lg:right-[-280px] xl:right-[-400px] z-0 ">
+            <div className="bg-coustemOrange  w-[200px] h-[200px]  md:w-[500px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[650px] xl:h-[700px] rounded-full"></div>
           </div>
         </div>
         <div className="flex flex-row justify-between mt-10 lg:mt-20 px-6 lg:px-20 xl:px-40 gap-14">
           <div className="flex flex-col justify-start w-full lg:w-1/2">
-            <p className="pride uppercase mt-4 w-full lg:w-[70%]">Restaurant</p>
+            <p className="pride uppercase mt-4 w-full lg:w-[70%] text-md  lg:text-xl">Restaurant</p>
             <div className="flex flex-col justify-start space-y-2 font-bold">
               <img className="w-[60%] lg:w-[60%] mt-5 lg:mt-10" src={frame5} alt="Momo Varieties" />
               <p className='text-slate-800'>More than <span className="text-coustemOrange text-lg z-10">20+ Varieties</span> of momo available for you</p>
@@ -80,8 +80,8 @@ function Home() {
 
             </div>
           </div>
-          <div className="flex justify-start items-center lg:w-1/2 -mt-32 md:mt-10 lg:mt-3">
-            <img className="relative z-10 w-[100%] lg:ml-28 ml-2" src={frame16} alt="Frame" />
+          <div className="flex justify-start items-center lg:w-1/2 -mt-40 md:mt-10 lg:mt-3">
+            <img className="relative z-10 w-[100%] lg:ml-24 ml-2" src={frame16} alt="Frame" />
           </div>
         </div>
 
@@ -129,7 +129,7 @@ function Home() {
         </div>
       </div>
 
-      <div className='flex mx-auto px-6 sm:px-10 md:px-16 lg:px-20 xl:px-40'>
+      <div className='flex mx-auto px-6 sm:px-10 md:px-16 lg:px-30 xl:px-50'>
         <img
           className='invisible lg:visible arrowLeft mt-48 cursor-pointer'
           src={arrowLeft}

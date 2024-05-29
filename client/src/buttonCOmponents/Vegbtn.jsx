@@ -7,7 +7,7 @@ import frymomo from "../images/aboutImg/frymomo.png"
 function Vegbtn() {
   return (
       <>
-  <div className="container flex items-center justify-center mx-auto px-6 sm:px-10 md:px-7 lg:px-40 mt-20">
+    <div className=" flex items-center justify-center mx-auto px-6 sm:px-10 md:px-7 lg:px-8 xl:px-40  mt-20">
       <div className="mt-10 flex justify-center items-center md:flex-row lg:flex-row lg:gap-32 md:gap-16 gap-6 flex-col">
         <div className="flex flex-col items-center">
           <img className="w-full max-w-[200px] h-auto" src={momo1} alt="Buff Momo" />
@@ -15,7 +15,7 @@ function Vegbtn() {
             <p className="text-slate-800 font-bold text-sm md:text-md lg:text-lg xl:text-xl">Veg Momo</p>
             <p className="flex py-2 gap-1 items-center">
               <img src={vector} alt="Vector" className="h-[12px] md:h-[14px] lg:h-[16px]" />
-              <span className="text-coustemOrange font-bold text-sm md:text-md lg:text-lg xl:text-xl -mt-1">200</span>
+              <span className="text-coustemOrange font-bold text-sm md:text-md lg:text-lg xl:text-xl -mt-1">150</span>
             </p>
           </div>
         </div>
@@ -25,7 +25,7 @@ function Vegbtn() {
             <p className="text-slate-800 font-bold text-sm md:text-md lg:text-lg xl:text-xl">Veg Fry Momo</p>
             <p className="flex py-2 gap-1 items-center">
               <img src={vector} alt="Vector" className="h-[12px] md:h-[14px] lg:h-[16px]" />
-              <span className="text-coustemOrange font-bold text-sm md:text-md lg:text-lg xl:text-xl -mt-1">200</span>
+              <span className="text-coustemOrange font-bold text-sm md:text-md lg:text-lg xl:text-xl -mt-1">100</span>
             </p>
           </div>
         </div>
@@ -35,13 +35,13 @@ function Vegbtn() {
             <p className="text-slate-800 font-bold text-sm md:text-md lg:text-lg xl:text-xl">Veg C. Momo</p>
             <p className="flex py-2 gap-1 items-center">
               <img src={vector} alt="Vector" className="h-[12px] md:h-[14px] lg:h-[16px]" />
-              <span className="text-coustemOrange font-bold text-sm md:text-md lg:text-lg xl:text-xl -mt-1">200</span>
+              <span className="text-coustemOrange font-bold text-sm md:text-md lg:text-lg xl:text-xl -mt-1">100</span>
             </p>
           </div>
         </div>
       </div>
-    </div>
-      </>
+    </div> 
+</>
 
   )
 }
