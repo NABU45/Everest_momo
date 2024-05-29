@@ -22,51 +22,49 @@ function OurManu() {
           <p className='our-menu'>Our Menu</p>
         </div>
 
-        <div className='flex flex-col justify-center items-center  space-y-2 font-bold  '>
-          <span className='  text-coustemOrange  justify-center font-sans md:text-2xl transition-all text-md '>Our menu is more than just momos,</span>
-          <span className='text-slate-800 justify-center text-center font-sans md:text-2xl transition-all text-md '>with a variety of dishes to cater to all tastes and preferences</span>
+        <div className='flex flex-col  items-center  space-y-2 font-bold transition-all text-md  justify-center text-center  md:text-2xl  font-proxima'>
+          <span className='  text-coustemOrange '>Our menu is more than just momos,</span>
+          <span className=' text-customBlack  '>with a variety of dishes to cater to all tastes and preferences</span>
         </div>
 
         {/*  */}
-        <div className=''>
-          <div className='flex flex-col justify-center items-center  space-y-2 font-bold '>
-            <p className='justify-center font-sans md:text-2xl transition-all text-md text-customGreen font-bold'> Scan the QR Code</p>
+
+          <div className='flex flex-col justify-center items-center  space-y-2 font-proxima '>
+            <p className='justify-center  md:text-2xl transition-all text-md text-customGreen font-bold'> Scan the QR Code</p>
             <a href="">
-              <span className='flex justify-center text-center font-normal text-gray-700 '>Your can also check allergy advice using your phone as well</span>
+              <span className='flex justify-center text-center text-sm lg:text-xl '>Your can also check allergy advice using your phone as well</span>
             </a>
             <a href="" className=' justify-center text-center'>
               <img className='  md:w-[150px] md:h-[150px] w-[130px] h-[130px] mt-6'  src={scan} alt="" />
             </a>
             <div className='flex flex-row  justify-center gap-1 '>
-              <p className=' uppercase text-coustemOrange font-bold justify-center font-sans md:text-xl transition-all text-md '>Scan</p>
-              < span className=' uppercase text-slate-800 font-bold justify-center font-sans md:text-xl transition-all text-md '> Me!
+              <p className=' uppercase text-coustemOrange font-bold  font-sans md:text-xl transition-all text-md '>Scan</p>
+              < span className=' uppercase  font-bold  md:text-xl transition-all text-md  text-customBlack '> Me!
               </span>
               <IoIosPhonePortrait className='mt-1 md:size-5 sm:3' />
             </div>
           </div>
 
-        </div>
 
         {/* momo manu */}
         <div className='mt-10'>
-          <div className='flex flex-col lg:flex-row lg-3 lg:gap-6 justify-center items-center '>
+          <div className='flex flex-col lg:flex-row lg-3 lg:gap-3 justify-center items-center '>
           <img src={Advice02} alt="" className='' />
-            <div class="w-[279px] h-[48px] flex justify-center items-center text-[#D95103] flex-none flex-grow-0 text-[40px] leading-[120%] font-chela font-normal">
-              Buff <span className='text-slate-800 ml-3'> MOMO's</span> 
+            <div class="w-[279px] h-[48px] flex justify-center items-center text-[#D95103] flex-none flex-grow-0 text-[40px] leading-[120%] font-chela ">
+              Buff <span className=' text-customBlack ml-3'> MOMO's</span> 
             </div> 
             <img src={Advice03} alt=""  />
 
           </div>
         
-    
-
+  
           {/* momos iteams */}
           <div className='flex justify-center items-center'>
             <BuffMomos />
           </div>
         </div>
         <div className='mt-14'>
-          <div className=' flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center items-center   '>
+          <div className=' flex flex-col lg:flex-row gap-3 lg:gap-3 justify-center items-center   '>
               <img src={Advice02} alt="" className='' />
               <div class="w-[279px] h-[48px] flex items-center text-[#D95103]  flex-none flex-grow-0 text-[40px] leading-[120%] font-chela font-normal">
               CHICKEN<span className='text-slate-800 ml-3'> MOMO's</span></div>
