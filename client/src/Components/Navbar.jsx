@@ -15,7 +15,7 @@ function Navbar() {
 
     return (
         <nav className="bg-white shadow-md">
-            <div className="flex justify-between items-center py-4 sm:w-screen px-5 lg:px-18 xl:px-40">
+            <div className="flex justify-between items-center py-4 sm:w-screen px-5 lg:px-14 xl:px-40">
                 <div className="flex items-center gap-14">
                     {/* Left Section: Logo and Title */}
                     <div className="flex items-center gap-3">
