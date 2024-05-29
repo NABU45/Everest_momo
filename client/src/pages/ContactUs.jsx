@@ -76,7 +76,6 @@ function ContactUs() {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             
@@ -93,7 +92,6 @@ function ContactUs() {
                     <div className='mt-10'>
                     <GetInTouchForm buttonColor="green" />
                     </div>
-
                 </div>
             </div>
             <span  >
