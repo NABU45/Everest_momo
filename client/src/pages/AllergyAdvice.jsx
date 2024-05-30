@@ -24,7 +24,7 @@ function AllergyAdvice() {
     return (
         <div className=' overflow-hidden'>
             <Navbar />
-                <div className=' mx-auto px-6 lg:px-36  xl:px-40  '>
+                <div className=' mx-auto px-6 lg:px-20  xl:px-40  '>
 
                     <div className='flex flex-row justify-between  gap-1 lg:gap-10'>
                         <div className=' flex flex-col justify-start'>
@@ -32,7 +32,7 @@ function AllergyAdvice() {
                             <div>
                                 <p className='pride uppercase text-[7px] md:text-[16spx] lg:text-lg mt-1 lg:mt-12 w-full lg:w-[60%]'>at our restaurant</p>
                                 <div className='flex flex-col justify-first space-y-2 font-bold w-[80%]'>
-                                    <h1 className='mt-1 lg:mt-5 text-customBlack font-proxima  customer text-[8px] md:text-xl lg:text-3xl'>We use only the freshest and highest quality ingredients in all our dishes,
+                                    <h1 className='mt-1 lg:mt-5 text-customBlack font-proxima  customer text-[8px] md:text-xl xl:text-3xl'>We use only the freshest and highest quality ingredients in all our dishes,
                                         <span className=" text-coustemOrange space-x-1 relative"> and offer transparency in our ingredient labeling.</span>
                                     </h1>
                                 </div>
@@ -55,15 +55,15 @@ function AllergyAdvice() {
                 </div>
 
 
-                <div className='relative mt-16 font-proxima'>
-                    <div className='relative left-2 md:left-52 lg:left-72'>
-                        <img className='w-[70%] lg:w-[40%]' src={Advice04} alt='/' />
+                <div className='relative mt-20 lg:mt-16 font-proxima'>
+                    <div className='relative left-2 md:left-44 xl:left-72 '>
+                        <img className='w-[40%] lg:w-[50%] xl:w-[40%]' src={Advice04} alt='/' />
                     </div>
                     <div className='relative'>
-                        <img className='w-[100%]' src={Advice05} alt='/' />
+                        <img className='mt-40 w-[90%] xl:ml-20' src={Advice05} alt='/' />
                     </div>
-                    <div className='relative w-full left-[58%] mt-56 lg:mt-10 visible sm:hidden md:block'>
-                        <img className='w-[50%] lg:w-[25%]' src={Advice06} alt='/' />
+                    <div className='relative w-full left-[70%] md:left-[50%] lg:left-[60%] mt-[400px] md:mt-[700px] lg:mt-60 xl:mt-10 visible sm:hidden md:block'>
+                        <img className='w-[30%] xl:w-[20%]' src={Advice06} alt='/' />
                     </div>
                     <div className='w-full absolute top-0 left-0 z-10 flex justify-center items-center'>
                         <div className='flex w-[80%] md:w-[50%] flex-col gap-2 md:gap-20 justify-between mt-0 md:mt-20'>
@@ -217,7 +217,7 @@ function AllergyAdvice() {
                         </div>
                     </div>
                 </div>
-                <div className=' relative'>
+                <div className='mt-auto lg:mt-32 xl:mt-auto'>
                     
                         <div className='mt-14 md:mt-24 flex justify-center items-center text-center'>
                             <div className=' flex flex-col lg:flex-row gap-2 lg:gap-3 justify-center items-center   '>

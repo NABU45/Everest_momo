@@ -8,7 +8,7 @@ function Footer({ footerColor }) {
 
   return (
     <div className={`${footerColor === 'white' ? 'bg-white' : 'bg-slate-50'}`}>
-      <div className="mx-auto px-6 lg:px-40 mt-32">
+      <div className="mx-auto px-6  lg:px-20 xl:px-40 mt-32">
         <div className="flex flex-col lg:flex-row justify-start lg:gap-28 xl:gap-52 gap-10">
           {/* icon */}
           <div className=" lg:w-[55%] xl:w-[33%] w-full">
