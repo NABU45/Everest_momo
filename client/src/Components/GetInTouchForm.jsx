@@ -3,6 +3,10 @@
 import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import toast from "react-hot-toast";
+import { Link, useNavigate } from "react-router-dom";
+
+
 
 function GetInTouchForm({ buttonColor }) {
   const [firstName, setFirstName] = useState("");
@@ -12,6 +16,7 @@ function GetInTouchForm({ buttonColor }) {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [submitMessage, setSubmitMessage] = useState('');
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,14 +38,18 @@ function GetInTouchForm({ buttonColor }) {
 
       const data = await response.json();
 
-      if (response.ok) {
-        setSubmitMessage("Thank you for getting in touch! We will respond shortly.");
+      if (response.status !== 200) {
+        if(data.err_code === "USER_ALREADY_EXIST"){
+          toast.error("User already exist");
+        }
+        toast.success("Thank you for getting in touch! We will respond shortly.");
       } else {
-        setSubmitMessage(data.message); // Display error message from server
+        // Display error message from server
+        console.log(data.message);
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      setSubmitMessage("An error occurred while submitting the form. Please try again later.");
+      toast.error("An error occurred while submitting the form. Please try again later.");
     }
   };
 

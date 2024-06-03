@@ -14,7 +14,7 @@ const markerIcon = new L.Icon({
 });
 
 function LeafletMap() {
-    const [center, setCenter] = useState({ lat: 27.7172, lng: 85.3240 });
+    const [center, setCenter] = useState({ lat:  27.4252, lng: 85.1912 });
     const ZOOM_LEVEL = 9;
     const mapRef = useRef();
 

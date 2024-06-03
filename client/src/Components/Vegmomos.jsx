@@ -6,7 +6,7 @@ import frymomo from "../images/aboutImg/frymomo.png"
 
 
 
-function BuffMomos() {
+function Vegmomos() {
   return (
     <>
       <div className='flex flex-col '>
@@ -17,11 +17,11 @@ function BuffMomos() {
           <p className='buffmomonew ml-24 text-white -mt-9 italic '>New</p>
         </div>
         <div className='flex-col flex justify-center items-center mt-5'>
-          <p className=' font-bold text-lg md:text-2xl text-customBlack font-proxima'>Buff Steam Momo</p>
+          <p className=' font-bold text-lg md:text-2xl text-customBlack font-proxima'>Veg Steam Momo</p>
           <p className='flex py-2 gap-1'><img src={vector} alt="" className='h-[13px] md:h-[17px]' />
           <span className=' text-coustemOrange text-bold text-lg md:text-2xl -mt-2  font-proxima'> 200</span>
           </p>
-          <span className='flex justify-center text-center text-customiconbg mt-1 lg:text-[16px] md:text-md text-[12px] px-10 lg:px-1'>(Freshly Steamed Buff Mommos made from whole wheat and kneaded with beat Carotene Rich Vegetable Juice)</span>
+          <span className='flex justify-center text-center text-customiconbg mt-1 lg:text-[16px] md:text-md text-[12px] px-10 lg:px-1'>(Freshly Steamed Veg Mommos made from whole wheat and kneaded with beat Carotene Rich Vegetable Juice)</span>
         </div>
         </div>
         <div className='flex flex-col items-center w-[350px] '>
@@ -30,11 +30,11 @@ function BuffMomos() {
           <p className='popular ml-36 -mt-10  text-white italic'>Popular</p>
         </div>
         <div className='flex-col flex justify-center items-center mt-5'>
-          <p className=' font-bold text-lg md:text-2xl text-customBlack font-proxima '>Buff C. Momo</p>
+          <p className=' font-bold text-lg md:text-2xl text-customBlack font-proxima '>Veg C. Momo</p>
           <p className='flex py-2 gap-1'><img src={vector} alt="" className='h-[13px] md:h-[17px]' />
           <span className=' text-coustemOrange text-bold text-lg  md:text-2xl -mt-2  font-proxima'> 200</span>
           </p>
-          <span className='flex justify-center text-center  btnFont text-customiconbg mt-1 lg:text-[16px] md:text-md text-[12px] px-10 lg:px-1' >(Freshly Steamed Buff Mommos made from whole wheat and kneaded with beat Carotene Rich Vegetable Juice)</span>
+          <span className='flex justify-center text-center  btnFont text-customiconbg mt-1 lg:text-[16px] md:text-md text-[12px] px-10 lg:px-1 ' >(Freshly Steamed Veg Mommos made from whole wheat and kneaded with beat Carotene Rich Vegetable Juice)</span>
         </div>
         </div>
       </div>
@@ -45,11 +45,11 @@ function BuffMomos() {
           <img className='w-[230px] md:w-[260px] h-[160px] md:h-[189px] top-[23px] mr-10  z=0' src={frymomo} alt="" />
         </div>
         <div className='flex-col flex justify-center items-center mt-5'>
-          <p className='font-bold text-lg md:text-2xl  font-proxima text-customBlack'>Buff Fry Momo</p>
+          <p className='font-bold text-lg md:text-2xl  font-proxima text-customBlack'>Veg Fry Momo</p>
           <p className='flex py-2 gap-1'><img src={vector} alt="" className=' h-[13px] md:h-[18px]' />
           <span className=' text-coustemOrange text-bold text-lg md:text-2xl -mt-2 font-proxima'> 200</span>
           </p>
-          <span className='lg:text-[16px] md:text-md text-[12px] px-10 lg:px-1 flex justify-center text-center btnFont text-customiconbg  mt-1'>(Freshly Steamed Buff Mommos made from whole wheat and kneaded with beat Carotene Rich Vegetable Juice)</span>
+          <span className='lg:text-[16px] md:text-md text-[12px] px-10 lg:px-1 flex justify-center text-center btnFont text-customiconbg  mt-1'>(Freshly Steamed Veg Mommos made from whole wheat and kneaded with beat Carotene Rich Vegetable Juice)</span>
         </div>
         </div>
              <div className='flex flex-col   items-center w-[350px] '>
@@ -58,11 +58,11 @@ function BuffMomos() {
           <p className='recomanded ml-16 text-white -mt-9 italic'>Recomanded</p>
         </div>
         <div className='flex-col flex justify-center items-center mt-5'>
-          <p className='font-bold text-lg md:text-2xl text-customBlack font-proxima'>Buff jhol Momo</p>
+          <p className='font-bold text-lg md:text-2xl text-customBlack font-proxima'>Veg jhol Momo</p>
           <p className='flex py-2 gap-1'><img src={vector} alt="" className='h-[13px] md:h-[17px]' />
           <span className=' text-coustemOrange text-bold text-xl -mt-2 font-proxima'> 200</span>
           </p>
-          <span className=' lg:text-[16px] md:text-md text-[12px] px-10 lg:px-1  flex justify-center text-center mt-1 text-customiconbg btnFont'>(Freshly Steamed Buff Mommos made from whole wheat and kneaded with beat Carotene Rich Vegetable Juice)</span>
+          <span className='lg:text-[16px] md:text-md text-[12px] px-10 lg:px-1 flex justify-center text-center mt-1 text-customiconbg btnFont'>(Freshly Steamed Veg Mommos made from whole wheat and kneaded with beat Carotene Rich Vegetable Juice)</span>
         </div>
         </div>
       </div>
@@ -71,4 +71,4 @@ function BuffMomos() {
   )
 }
 
-export default BuffMomos
+export default Vegmomos

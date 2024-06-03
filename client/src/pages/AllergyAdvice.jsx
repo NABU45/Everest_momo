@@ -55,14 +55,14 @@ function AllergyAdvice() {
                 </div>
 
 
-                <div className='relative mt-20 lg:mt-16 font-proxima'>
+                <div className='relative mt-10 lg:mt-16 font-proxima'>
                     <div className='relative left-2 md:left-44 xl:left-72 '>
                         <img className='w-[40%] lg:w-[50%] xl:w-[40%]' src={Advice04} alt='/' />
                     </div>
                     <div className='relative'>
-                        <img className='mt-40 w-[90%] xl:ml-20' src={Advice05} alt='/' />
+                        <img className='mt-40 w-[100%] lg:w-[90%] xl:ml-20' src={Advice05} alt='/' />
                     </div>
-                    <div className='relative w-full left-[70%] md:left-[50%] lg:left-[60%] mt-[400px] md:mt-[700px] lg:mt-60 xl:mt-10 visible sm:hidden md:block'>
+                    <div className='relative w-full left-[70%] md:left-[50%] lg:left-[60%] mt-[330px] md:mt-[600px] lg:mt-60 xl:mt-10 visible sm:hidden md:block'>
                         <img className='w-[30%] xl:w-[20%]' src={Advice06} alt='/' />
                     </div>
                     <div className='w-full absolute top-0 left-0 z-10 flex justify-center items-center'>
@@ -217,9 +217,9 @@ function AllergyAdvice() {
                         </div>
                     </div>
                 </div>
-                <div className='mt-auto lg:mt-32 xl:mt-auto'>
+                <div className=' mt-20 lg:mt-32 xl:mt-auto'>
                     
-                        <div className='mt-14 md:mt-24 flex justify-center items-center text-center'>
+                        <div className=' flex justify-center items-center text-center'>
                             <div className=' flex flex-col lg:flex-row gap-2 lg:gap-3 justify-center items-center   '>
                                 <img src={Advice02} alt="" className='' />
                                 <div class="w-[279px] h-[48px]  text-[#D95103]  flex-none flex-grow-0 text-[40px] leading-[120%] font-chela font-normal ">
@@ -228,8 +228,8 @@ function AllergyAdvice() {
                             </div>
                         </div>
 
-                        <div className='mt-10 flex justify-center items-center w-full'>
-                            <div className='flex flex-col justify-center items-center gap-8 w-[80%]'>
+                        <div className=' mt-8 lg:mt-10 flex justify-center items-center w-full'>
+                            <div className='flex flex-col justify-center items-center gap-8 w-[80%]  text-sm lg:text-lg'>
                                 <p className='text-[#252D43]'>Lorem ipsum dolor sit amet consectetur. Feugiat lectus sit est blandit in gravida. Nisl facilisis luctus sit porttitor placerat purus tincidunt. Cursus nascetur a mauris odio quis sociis pretium nisl. In viverra diam dis montes orci congue vulputate magna ullamcorper. Semper tellus ipsum felis maecenas ultrices turpis amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio labore omnis ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, et eveniet cum pariatur cumque sed molestiae! Quas laboriosam dignissimos quod! euismod malesuada. Amet sed neque vitae malesuada quis sed urna.</p>
                                 <p className='text-[#252D43]'>Feugiat orci feugiat cursus risus tincidunt. Aliquet nam iaculis bibendum tortor varius sit. Volutpat nunc nisl quisque elit. Ac est ultricies risus et sed. Donec auctor tristique quam morbi pellentesque et. Scelerisque dui id arcu laoreet iaculis nunc et nulla sed. Aliquet nullam vulputate quis ut mi placerat auctor Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis necessitatibus quasi vitae tempore incidunt ex facilis blanditiis atque obcaecati consectetur ullam exercitationem, magnam ipsa culpa, nemo ea deleniti sequi nulla.. Ipsum massa suspendisse netus mollis interdum.</p>
                                 <p className='text-[#252D43]'>Augue leo eget ut vitae maecenas ac. Metus massa nunc tristique donec dignissim aenean congue justo et. Parturient elit adipiscing non vitae mattis. Congue senec Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad itaque voluptates consequuntur, nesciunt tempora error veritatis, placeat atque numquam porro, accusamus dolore? Architecto repudiandae ut soluta totam, eligendi asperiores numquam veritatis, qui iste eius deleniti tenetur, dolor vero suscipit non consequuntur perferendis odio saepe debitis! Quam eaque eligendi nemo.tus urna cursus nisi nisl nisl tincidunt rhoncus. Congue sit etiam vestibulum elit aenean leo enim volutpat. Aliquet vitae condimentum bibendum ullamcorper vel cursus libero netus bibendum. Lorem id ut proin tincidunt. Nibh nunc amet odio est et. Sem dui nunc morbi leo quisque viverra ultrices. Mattis at tempus ultricies ut feugiat nunc dignissim. Urna turpis purus turpis elit risus.</p>

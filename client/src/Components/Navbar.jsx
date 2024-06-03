@@ -53,12 +53,12 @@ function Navbar() {
                     <a href="#" className="">
                         <CiInstagram size={24} className='bg-slate-600 text-white rounded-full p-1' />
                     </a>
-                    <Link to="/contactus" className="ml-4 py-1 px-4 text-white bg-coustemOrange rounded-3xl">Contact Us</Link>
+                    <Link to="/contactus" className="ml-4 py-1 px-4 text-white bg-coustemOrange rounded-3xl shadow-md  cursor-pointer text-2lg text-center w-30  transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 hover:bg-indigo-700 duration-300">Contact Us</Link>
                 </div>
 
                 {/* Toggle Button for Small Screens */}
                 <div className="flex lg:hidden items-center">
-                    <Link to="/contactus" className="py-1 px-2 mr-3 text-sm md:text-md md:py-1 md:px-4 text-white bg-coustemOrange rounded-3xl">Contact Us</Link>
+                    <Link to="/contactus" className="py-1 px-2 mr-3 text-sm md:text-md md:py-1 md:px-4 text-white bg-coustemOrange rounded-3xl   shadow-md  cursor-pointer  text-2lg text-center w-30  transition ease-in-out delay-150  hover:translate-x-1 hover:scale-110 hover:bg-indigo-500 duration-300">Contact Us</Link>
                     <button
                         onClick={() => setIsOpen(!isOpen)}
                         className="navbar-toggler flex items-center px-3 py-2 border rounded text-gray-500 border-gray-400 hover:text-gray-700 hover:border-gray-700"

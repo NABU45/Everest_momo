@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Advice01 from '../images/AdviceImg/Advice01.png'
 import About02 from '../images/aboutImg/About02.jpeg'
@@ -11,6 +11,9 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Button from '../Components/Button'
 import playCircle from "../images/aboutImg/play-circle.png";
+import GetInTouchForm from '../Components/GetInTouchForm'
+import Map from '../MapModel/Map';
+
 
 
 function OurService() {
@@ -27,7 +30,11 @@ function OurService() {
         text: 'Watch The Video', customStyles: 'w-36 lg:w-56 gap-1 lg:gap-2', onClick: () => console.log('Watch The Video  clicked')
     },
 ];
+const [showContact, setShowContact] = useState(false);
 
+const handleGetInTouchClick = () => {
+  setShowContact(!showContact);
+};
 
   return (
 <>
@@ -136,13 +143,27 @@ function OurService() {
               <p className='btnFont text-customiconbg'>If you have any queries, send us a message. Our Friendly team would love to hear from you </p>
             </div>
             <div className='w-[216px] h-[59px] rounded-full bg-customGreen flex justify-center items-center'>
-              <span className='text-white font-medium'>Get In Touch</span>
+              <span className='text-white font-medium cursor-pointer' onClick={handleGetInTouchClick} >Get In Touch</span>
             </div>
-            
+            {showContact && (
+        <div className='mx-auto flex flex-col md:flex lg:flex-row  items-center mt-20 bg-slate-50 gap-10 xl:gap-12 '>
+                <div className='w-full    lg:w-[550px] xl:w-[650px]'>
+                    <Map />
+                </div>
+                <div className=' relative bg-white w-5/6 lg:w-2/6  lg:ml-10 shadow-lg px-8 py-20'>
+                      <p className='text-coustemOrange font-sans md:text-2xl transition-all text-lg font-bold -mt-10 '>
+                        Contact<span className='text-slate-800 ml-2'>Us</span>
+                      </p>
+                    <p className='text-slate-500  text-xs lg:text-md mt-2'>If you have any queries, send us a message. Our Friendly team would love to hear from you</p>
+                    <div className='mt-10'>
+                    <GetInTouchForm buttonColor="green" />
+                    </div>
+                </div>
+            </div>)}
+            </div>
           </div>
-        </div>
 
-
+       
       <Footer />
       </>
   )

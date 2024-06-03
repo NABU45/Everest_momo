@@ -9,7 +9,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 function Address() {
     return (
-        <div className=' bg-customGreen flex flex-col gap-10 rounded-3xl px-10 text-white lg:w-2/5 h-[650px]  py-6'>
+        <div className=' bg-customGreen flex flex-col gap-10 rounded-lg lg:rounded-3xl px-10 text-white w-full lg:w-2/5 h-[650px]  py-6'>
             <div>
                 <div className=' flex gap-2 '>
                     <img src={Location} alt="" />

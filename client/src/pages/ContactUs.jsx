@@ -11,7 +11,7 @@ function ContactUs() {
     return (
         <>
             <Navbar />
-            <div className='container mx-auto px-6 lg:px-32 gap-14 flex flex-col justify-center'>
+            <div className='container mx-auto px-6 lg:px-32 gap-14 flex flex-col justify-center '>
 
                 {/* our services */}
                 <div className='flex justify-center items-center mt-14'>
@@ -81,10 +81,10 @@ function ContactUs() {
             
             <div className='bg-slate-50'>
                <div className='mx-auto flex flex-col md:flex lg:flex-row  items-center mt-20 bg-slate-50 gap-10 xl:gap-32 '>
-                <div className='w-full    lg:w-[550px] xl:w-[650px]'>
+                <div className='w-full  lg:w-[550px] xl:w-[650px]'>
                     <Map />
                 </div>
-                <div className=' relative bg-white w-5/6 lg:w-2/6  lg:ml-10 shadow-lg px-8 py-20'>
+                <div className=' relative bg-white w-5/6 lg:w-2/6  lg:ml-10 shadow-lg px-8 py-20 rounded-lg'>
                       <p className='text-coustemOrange font-sans md:text-2xl transition-all text-lg font-bold -mt-10 '>
                         Contact<span className='text-slate-800 ml-2'>Us</span>
                       </p>

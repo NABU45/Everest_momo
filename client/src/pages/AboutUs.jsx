@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import Group8 from '../images/aboutImg/Group8.png'
@@ -19,10 +19,32 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import Button from '../Components/Button';
 import playCircle from "../images/aboutImg/play-circle.png";
+import CustomArrows from '../Components/Card';
 
 
+const coreMembers = [
+    {
+        text: "Momo is not just about sustenance, it's about bringing people together and creating memories. At our restaurant, we strive to create a warm and inviting atmosphere where our guests can enjoy delicious momo, great company, and unforgettable experiences",
+        name: "Rajan thakuri",
+        image: About10,
+    },
+    {
+        text: "Momo is not just about sustenance, it's about bringing people together and creating memories. At our restaurant, we strive to create a warm and inviting atmosphere where our guests can enjoy delicious momo, great company, and unforgettable experiences",
+        name: "nabin japrel",
+        image: About11,
+    }
+];
 
 function AboutUs() {
+
+    const [currentCoreMember, setCurrentMember] = useState(0);
+    const handlePreviousClick = () => {
+        setCurrentMember((prev) => (prev === 0 ? coreMembers.length - 1 : prev - 1))
+    }
+    
+    const handleNextClick = () => {
+        setCurrentMember((prev) =>  (prev === coreMembers.length - 1 ? 0 : prev + 1));
+        }
 
     
     const aboutStyle02 = {
@@ -44,7 +66,7 @@ function AboutUs() {
         backgroundImage: `url(${About05})`,
         backgroundSize: 'cover',
         transition: 'background-image 0.5s ease',
-    };
+    }; 
 
     const aboutStyle07 = {
         position: 'relative',
@@ -109,7 +131,7 @@ function AboutUs() {
         },
     ];
 
-
+ 
     return (
         <>
             <Navbar />
@@ -210,34 +232,37 @@ function AboutUs() {
                 </div>
             </div>
 
-
-            <div className='mt-20'>
-
-                <div className='flex flex-col h-[600px] items-center md:flex-row w-full relative inset-0'>
-                    <div className='w-[100%] md:w-[80%] h-full flex px-6 lg:px-32 items-center' style={aboutStyle09}>
-                        <div style={backgroundImageStyle09} className='h-full'></div>
-                        <div style={overlayStyle09}></div>
-                        <div style={textStyle09} className=' flex flex-col  items-center'>
-                            <div className=' font-proxima'>
-                                <p className='text-2xl md:text-5xl lg:text-9xl'>❝</p>
-                                <p className='mt-2 md:mt-5 text-sm lg:text-2xl '>
-                                    Momo is not just about sustenance, it's about bringing people together and creating memories. At our restaurant, we strive to create a warm and inviting atmosphere where our guests can enjoy delicious momo, great company, and unforgettable experiences
-                                </p>
-                                <p className='mt-1 md:mt-10 font-bold text-md lg:text-4xl'> Marcus Schleifer </p>
-                                <p className='font-bold text-sm lg:text-2xl'> CEO </p>
+              <div className='mt-20'>
+            <div className='flex flex-col h-[600px] items-center md:flex-row w-full relative inset-0'>
+                <div className='w-[100%] md:w-[80%] h-full flex px-6 lg:px-32 items-center' style={aboutStyle09}>
+                    <div style={backgroundImageStyle09} className='h-full'></div>
+                    <div style={overlayStyle09}></div>
+                    <div style={textStyle09} className='flex flex-col items-center'>
+                        <div className='font-proxima'>
+                            <p className='text-2xl md:text-5xl lg:text-9xl'>❝</p>
+                            <p className='mt-2 md:mt-5 text-sm lg:text-2xl'>
+                                {coreMembers[currentCoreMember].text}
+                            </p>
+                            <p className='mt-1 md:mt-10 font-bold text-md lg:text-4xl'>
+                                {coreMembers[currentCoreMember].name}
+                            </p>
+                            <p className='font-bold text-sm lg:text-2xl'> CEO </p>
+                        </div>
+                        <div className='flex gap-2 relative sm:-bottom-6 md:-bottom-10 left-28 sm:left-48 md:left-28'>
+                            <div className='h-[24px] w-[24px] md:h-[48px] md:w-[48px] rounded-full border-2 border-[#A6AEBB] flex items-center justify-center cursor-pointer text-white' onClick={handlePreviousClick}>
+                                <IoMdArrowRoundBack />
                             </div>
-                            <div className=' flex gap-2 relative  sm:-bottom-6 md:-bottom-10 left-28 sm:left-48 md:left-28'>
-                                <div className='h-[24px] w-[24px] md:h-[48px] md:w-[48px] rounded-full border-2 border-[#A6AEBB] flex items-center justify-center text-white'><IoMdArrowRoundBack /></div>
-                                <div className='h-[24px] w-[24px] md:h-[48px] md:w-[48px] rounded-full border-2 border-[#A6AEBB] flex items-center justify-center text-white'><IoMdArrowRoundForward /></div>
+                            <div className='h-[24px] w-[24px] md:h-[48px] md:w-[48px] rounded-full border-2 border-[#A6AEBB] flex items-center justify-center cursor-pointer text-white'>
+                                <IoMdArrowRoundForward  onClick={handleNextClick}  />
                             </div>
                         </div>
                     </div>
-                    <div className='flex items-center h-[600px] w-[100%] md:w-[90%] lg:w-[60%] overflow-hidden bg-cover'>
-                        <img className='w-[100%] h-[600px] bg-cover relative' src={About10} alt="" />
-                    </div>
+                </div>
+                <div className='flex items-center h-[600px] w-[100%] md:w-[90%] lg:w-[60%] overflow-hidden bg-cover'>
+                    <img className='w-[100%] h-[600px] bg-cover relative' src={coreMembers[currentCoreMember].image} alt="" />
                 </div>
             </div>
-
+        </div>
 
             <div className=' px-6 lg:px-40'>
                 <div className='flex flex-col justify-center items-center gap-[8px] '>
@@ -245,49 +270,12 @@ function AboutUs() {
                     <p className=' mt-2 text-customGreen font-bold text-[10px] md:text-xl font-proxima'>Our talented team members who delivers only the best results</p>
                 </div>
 
-                
-                <div className='flex flex-col mt-10 items-center lg:flex-row md:justify-center gap-[24px] '>
-                    <div style={aboutStyle11} className='relative bg-cover h-[450px] w-[300px] md:h-[512px] md:w-[360px] transition-background-image duration-500 ease-in-out rounded-lg'>
-                        <div className='absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90 rounded-lg'>
-                            <div className='text-white absolute bottom-5 left-5 font-bold'>
-                                <p>Head Chef</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={aboutStyle12} className='relative bg-cover h-[450px] w-[300px] md:h-[512px] md:w-[360px] transition-background-image duration-500 ease-in-out rounded-lg'>
-                        <div className='absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90 rounded-lg'>
-                            <div className='text-white absolute bottom-5 left-5 font-bold'>
-                                <p>Assistant Chef</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={aboutStyle13} className='relative bg-cover h-[450px] w-[300px] md:h-[512px] md:w-[360px] transition-background-image duration-500 ease-in-out rounded-lg'>
-                        <div className='absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90 rounded-lg'>
-                            <div className='text-white absolute bottom-5 left-5 font-bold'>
-                                <p>Assistant Chef</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
 
-
-                <div className='flex justify-center' >
-                    <div className='flex w-[1128px] h-[48px]'>
-                        <div className='flex justify-between items-center w-full' >
-                            <div className='flex items-center h-[48px] w-[85px]'>
-                                <span className='font-bold'>01</span>
-                                <span>/05</span>
-                            </div>
-                            <div className='h-[48px] w-[112px] flex justify-end items-center gap-2'>
-                                <div className='h-[24px] w-[24px] md:h-[48px] md:w-[48px] rounded-full border-2 border-[#A6AEBB] flex items-center justify-center'><IoMdArrowRoundBack /></div>
-                                <div className='h-[24px] w-[24px] md:h-[48px] md:w-[48px] rounded-full border-2 border-[#A6AEBB] flex items-center justify-center'><IoMdArrowRoundForward /></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <CustomArrows/>
+
             <Footer footerColor="white" />
+
         </>
     )
 }

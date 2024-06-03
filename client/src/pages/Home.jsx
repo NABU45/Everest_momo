@@ -18,6 +18,30 @@ import girls from '../images/aboutImg/girls.png';
 import Address from '../Components/Address';
 import GetInTouchForm from '../Components/GetInTouchForm';
 import LeafletMap from '../Maps/LeafletMap';
+import vector1 from '../images/serviceImg/rtsarrow.png';
+import vector2 from '../images/serviceImg/leftarrow.png';
+import nabin from '../images/serviceImg/nabu.jpg';
+import japrel from '../images/serviceImg/nabin.jpg';
+
+
+
+const testimonials = [
+  {
+      quote: "Only the best momo you can find in the market. Different varieties of momo to choose from. Will be visiting again soon",
+      name: "Lila Dias",
+      image: girls
+  },
+  {
+      quote: "Great atmosphere and delicious food. The service was excellent. Highly recommend this place!",
+      name: "Nabin japrel",
+      image: nabin
+  },
+  {
+      quote: "A fantastic place to dine in with family and friends. The food is amazing and the staff is very friendly.",
+      name: "Thapa Smith",
+      image: japrel
+  }
+];
 
 
 function Home() {
@@ -55,6 +79,18 @@ function Home() {
   ];
 
 
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  const handlePreviousClick = () => {
+      setCurrentTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+  };
+
+  const handleNextClick = () => {
+      setCurrentTestimonial((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+  };
+
+
+
   return (
     <>
       <div className="relative z-20">
@@ -73,9 +109,11 @@ function Home() {
               <img className="w-[60%] lg:w-[60%] mt-5 lg:mt-10" src={frame5} alt="Momo Varieties" />
               <p className='text-slate-800'>More than <span className="text-coustemOrange text-lg z-10">20+ Varieties</span> of momo available for you</p>
               <div >
+                <a href="/ourmanu">
               {buttonsConfig2.map((btn, index) => (
                 <Button key={index} text={btn.text} customStyles={btn.customStyles} image={btn.image} onClick={btn.onClick} />
               ))}
+              </a>
             </div>
 
             </div>
@@ -90,7 +128,7 @@ function Home() {
           <div className='flex flex-col gap-[8%] mt-[8%]'>
             <h1 className=' text-customBlack customer text-sm md:text-xl lg:text-2xl xl:text-4xl text-proxima'>Why Customer<span className="text-coustemOrange space-x-1 relative"> Love Us</span></h1>
             <span className='w-[85%] text-customaragraph text-proxima flex justify-between text-xs lg:text-sm xl:text-lg paragraph'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorem provident consectetur similique quidem fuga culpa optio ea at in voluptatem saepe velit, numquam accusamus eum praesentium officiis dolorum ipsa? Minus vel cupiditate.</span>
-            <div className='mt-4'>
+            <div className='mt-4 '>
               {buttonsConfig1.map((btn, index) => (
                 <Button key={index} text={btn.text} customStyles={btn.customStyles} image={btn.image} onClick={btn.onClick} />
               ))}
@@ -150,9 +188,11 @@ function Home() {
       </div>
       <div className='flex justify-center items-center mx-auto px-6 sm:px-10 md:px-28 lg:px-40 mt-4 lg:mt-10'>
         <div>
+        <a href="/ourmanu">
           {buttonsConfig2.map((btn, index) => (
             <Button key={index} text={btn.text} customStyles={btn.customStyles} image={btn.image} onClick={btn.onClick} />
           ))}
+          </a>
         </div>
       </div>
 
@@ -181,36 +221,40 @@ function Home() {
         <OurServicesSection/>
         <div className='flex justify-center items-center text-center mx-auto px-6 sm:px-10 md:px-28 lg:px-40 mt-4 lg:mt-12'>
         <div>
+        <a href="/ourmanu">
           {buttonsConfig2.map((btn, index) => (
             <Button key={index} text={btn.text} customStyles={btn.customStyles} image={btn.image} onClick={btn.onClick} />
           ))}
+          </a>
         </div>
       </div>
 
 
       {/*Testimonials  */}
-      <div className='mt-8 lg:mt-20 bg-slate-50 w-full py-10'>
-        <div className='px-6 lg:px-40 flex flex-col lg:flex-row lg:justify-between '>
-          <div className='  mt-10 lg:mt-20  w-full lg:w-2/4 '>
-            <h1 className=' text-customBlack font-proxima customer text-lg md:text-2xl lg:text-4xl'>200+  <span className="text-coustemOrange space-x-1 relative ml-2">Happy  Customers </span> 
-            </h1>
-            <p className=' mt-2 font-proxima text-customGreen font-bold text-[10px] md:text-xl'>What our customers say about us</p>
-            <div className=' mt-7 lg:mt-12 w-full lg:w-3/4'>
-            <span className='  italic text-md '>“Only the best momo you can find in the market. Different Varieties of momo to choose from. Will be visiting again soon”</span>
-            <h1 className='mt-5 font-bold text-2xl font-proxima'> Lila Dias</h1>
-            </div>
-            <div className='flex  gap-5 mt-10 lg:mt-16'>
-               <img className='smallArrowLeft  cursor-pointer' src={arrowLeft} alt=" " />
-               <img className='smallArrowLeft  cursor-pointer'  src={arrowRights} alt="" />
+  {/* Testimonials */}
+  <div className='mt-8 lg:mt-20 bg-slate-50 w-full py-10'>
+                <div className='px-6 lg:px-40 flex flex-col lg:flex-row lg:justify-between'>
+                    <div className='mt-10 lg:mt-20 w-full lg:w-2/4'>
+                        <h1 className='text-customBlack font-proxima customer text-xl md:text-2xl lg:text-4xl'>200+
+                            <span className="text-coustemOrange space-x-1 relative ml-2">Happy Customers</span>
+                        </h1>
+                        <p className='mt-2 font-proxima text-customGreen font-bold text-[10px] md:text-xl'>What our customers say about us</p>
+                        <div className='mt-7 lg:mt-12 w-full lg:w-3/4'>
+                            <span className='italic text-md'>“{testimonials[currentTestimonial].quote}”</span>
+                            <h1 className='mt-5 font-bold text-2xl font-proxima'>{testimonials[currentTestimonial].name}</h1>
+                        </div>
+                        <div className='flex gap-5 mt-10 lg:mt-16'>
+                            <img className=' cursor-pointer w-10' src={vector2} alt="Left arrow" onClick={handlePreviousClick} />
+                            <img className=' cursor-pointer w-10' src={vector1} alt="Right arrow" onClick={handleNextClick} />
+                        </div>
+                    </div>
+                    <div className='mt-10'>
+                        <img className='h-[95%] w-[95%]' src={testimonials[currentTestimonial].image} alt="Testimonial" />
+                    </div>
+                </div>
             </div>
 
-          </div>
-          <div className='mt-10'>
-            <img  className=' h-[95%] w-[95%]' src={girls} alt="" />
-          </div>
-        </div>
-      </div>
-      {/*  */}
+      {/*contect with restaurant  */}
       <div className=' mt-8 lg:mt-20  px-6 lg:px-40 flex justify-center w-auto items-center text-center '>
         <div className='flex flex-col'>
           <h1 className=' font-proxima text-customBlack customer text-lg md:text-2xl lg:text-4xl'>Get  <span className=" text-coustemOrange space-x-1 relative ml-2">In Touch </span>  </h1>
@@ -218,7 +262,7 @@ function Home() {
         </div>
       </div>
       <div className='  mt-1 lg:mt-20 px-6 lg:px-10 flex justify-center items-center '>
-        <div className=' flex flex-col lg:flex-row  lg:justify-between items-center  gap-10 rounded-lg  p-8 border-2 shadow-lg'>
+        <div className=' flex flex-col lg:flex-row  lg:justify-between items-center  gap-10 rounded-lg  lg:p-8 border-2 shadow-lg'>
           <Address />
           <GetInTouchForm buttonColor="orange " />
         </div>
